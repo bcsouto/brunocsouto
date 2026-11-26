@@ -6,7 +6,7 @@ Catálogo de plugins para o Claude (claude.ai, Cowork e Claude Code).
 
 | Plugin | Categoria | O que faz |
 |---|---|---|
-| [Coiote Místico](plugins/coiote-mistico) | Bem-estar | Consulta de tarô Rider-Waite-Smith com selo SHA-256 verificável antes da escolha e prompt de imagem da tiragem no padrão MidasFlow |
+| [Coiote Místico](plugins/coiote-mistico) | Esotérico | Consulta de tarô Rider-Waite-Smith com selo SHA-256 verificável antes da escolha e prompt de imagem da tiragem no padrão MidasFlow |
 | [PharmaAI Governance](plugins/pharmaai-governance) | Regulatório | Assessoria regulatória e de governança de IA para o setor farmacêutico e da saúde: auditoria de evidências, análise normativa, mudanças regulatórias, lacunas de políticas, avaliação de IA e de fornecedores |
 
 ## Como adicionar
