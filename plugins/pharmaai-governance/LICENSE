@@ -1,0 +1,27 @@
+PharmaAI Governance
+Copyright (c) 2026 Bruno Corrêa Souto · /in/brunocsouto
+
+Autor: Bruno Corrêa Souto · /in/brunocsouto
+
+Este plugin usa duas licenças, conforme a parte:
+
+1. Código: skills/auditar-evidencias/scripts/validate_dossier.py,
+   skills/auditar-evidencias/schemas/*.schema.json e tests/
+   Licença MIT. Texto integral em LICENSES/MIT.txt.
+
+2. Todo o restante: instruções das skills (SKILL.md), referências,
+   modelos, cenários de avaliação, exemplos de dossiê, README.md,
+   documentação e ícone
+   Creative Commons Atribuição-NãoComercial-SemDerivações 4.0 Internacional
+   (CC BY-NC-ND 4.0). Texto integral em LICENSES/CC-BY-NC-ND-4.0.txt e em
+   https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
+
+   Em resumo, a CC BY-NC-ND 4.0 permite copiar e redistribuir este material
+   sem alterações, com crédito ao autor e sem fins comerciais. Não permite
+   distribuir versões modificadas nem usar o material comercialmente sem
+   autorização prévia e por escrito do autor.
+
+O aviso em third-party/agent-architecture-designer-LICENSE.txt permanece sob
+a licença MIT de seu titular, TheJacksonCode, conforme NOTICE.md.
+
+SPDX-License-Identifier: MIT AND CC-BY-NC-ND-4.0

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: r03-esta-norma-esta-vigente-hoje
+expected_outcome: |
+  Consulta oficial atual ou pendência explícita; não deduzir vigência de acesso recente.

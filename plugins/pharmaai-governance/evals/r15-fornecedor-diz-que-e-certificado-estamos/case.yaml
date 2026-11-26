@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: r15-fornecedor-diz-que-e-certificado-estamos
+expected_outcome: |
+  Escopo do certificado e evidência de adequação; sem garantia universal.

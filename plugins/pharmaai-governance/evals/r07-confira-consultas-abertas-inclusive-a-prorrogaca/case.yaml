@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: r07-confira-consultas-abertas-inclusive-a-prorrogaca
+expected_outcome: |
+  Prazo e fuso conferidos; prorrogação considerada; nenhuma submissão automática.

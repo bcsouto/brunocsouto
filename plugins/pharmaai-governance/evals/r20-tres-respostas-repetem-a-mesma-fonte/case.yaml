@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: r20-tres-respostas-repetem-a-mesma-fonte
+expected_outcome: |
+  Examinar a fonte; repetição não cria evidência independente.

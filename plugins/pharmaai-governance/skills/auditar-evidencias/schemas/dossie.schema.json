@@ -1,0 +1,573 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:pharmaai-governance:dossie:1.1.0",
+  "title": "Dossiê de evidências PharmaAI Governance",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "type": "string",
+      "const": "1.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 1
+    },
+    "escopo": {
+      "$ref": "#/$defs/escopo"
+    },
+    "fontes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fonte"
+      }
+    },
+    "evidencias": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidencia"
+      }
+    },
+    "afirmacoes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/afirmacao"
+      }
+    },
+    "pendencias": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/pendencia"
+      }
+    },
+    "cobertura": {
+      "type": "string",
+      "enum": [
+        "integral",
+        "parcial"
+      ]
+    },
+    "material_auditado": {
+      "$ref": "#/$defs/material"
+    },
+    "versao_dossie": {
+      "type": "string",
+      "minLength": 1
+    },
+    "revisao_anterior": {
+      "$ref": "#/$defs/revisao_anterior"
+    },
+    "mudancas": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/mudanca"
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "titulo",
+    "escopo",
+    "fontes",
+    "evidencias",
+    "afirmacoes",
+    "pendencias",
+    "cobertura",
+    "material_auditado",
+    "versao_dossie",
+    "revisao_anterior",
+    "mudancas"
+  ],
+  "additionalProperties": false,
+  "$defs": {
+    "escopo": {
+      "type": "object",
+      "properties": {
+        "finalidade": {
+          "type": "string",
+          "minLength": 1
+        },
+        "universo": {
+          "type": "string",
+          "enum": [
+            "fechado",
+            "aberto"
+          ]
+        },
+        "data_referencia": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "format": "date"
+        },
+        "data_consulta": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "afirmacoes_solicitadas": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_-]{1,64}$"
+          },
+          "uniqueItems": true
+        },
+        "limites": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "finalidade",
+        "universo",
+        "data_referencia",
+        "data_consulta",
+        "afirmacoes_solicitadas",
+        "limites"
+      ],
+      "additionalProperties": false
+    },
+    "fonte": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_-]{1,64}$"
+        },
+        "titulo": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "autor": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "data_documento": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "format": "date"
+        },
+        "localizacao": {
+          "type": "string",
+          "minLength": 1
+        },
+        "natureza": {
+          "type": "string",
+          "enum": [
+            "estudo_revisado",
+            "preprint",
+            "comunicado",
+            "relatorio",
+            "norma",
+            "guia",
+            "documento",
+            "outro"
+          ]
+        },
+        "origem": {
+          "type": "string",
+          "enum": [
+            "fornecida",
+            "web"
+          ]
+        },
+        "acesso": {
+          "type": "string",
+          "enum": [
+            "completo",
+            "parcial",
+            "trecho",
+            "indisponivel"
+          ]
+        },
+        "consultada_em": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "temporalidade": {
+          "type": "string",
+          "enum": [
+            "consulta_atual",
+            "material_datado",
+            "nao_verificada"
+          ]
+        },
+        "sha256_texto": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "id",
+        "titulo",
+        "autor",
+        "data_documento",
+        "localizacao",
+        "natureza",
+        "origem",
+        "acesso",
+        "consultada_em",
+        "temporalidade",
+        "sha256_texto"
+      ],
+      "additionalProperties": false
+    },
+    "evidencia": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_-]{1,64}$"
+        },
+        "fonte_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_-]{1,64}$"
+        },
+        "localizador": {
+          "type": "string",
+          "minLength": 1
+        },
+        "trecho": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "fonte_id",
+        "localizador",
+        "trecho"
+      ],
+      "additionalProperties": false
+    },
+    "vinculo": {
+      "type": "object",
+      "properties": {
+        "evidencia_id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_-]{1,64}$"
+        },
+        "relacao": {
+          "type": "string",
+          "enum": [
+            "APOIA",
+            "CONTRADIZ",
+            "CONTEXTO"
+          ]
+        }
+      },
+      "required": [
+        "evidencia_id",
+        "relacao"
+      ],
+      "additionalProperties": false
+    },
+    "afirmacao": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_-]{1,64}$"
+        },
+        "texto": {
+          "type": "string",
+          "minLength": 1
+        },
+        "localizador": {
+          "type": "string",
+          "minLength": 1
+        },
+        "estado": {
+          "type": "string",
+          "enum": [
+            "SUSTENTADA",
+            "PARCIALMENTE_SUSTENTADA",
+            "CONTRADITA",
+            "NAO_VERIFICADA"
+          ]
+        },
+        "prioridade": {
+          "type": "string",
+          "enum": [
+            "MATERIAL",
+            "SECUNDARIA"
+          ]
+        },
+        "camada": {
+          "type": "string",
+          "enum": [
+            "FATO",
+            "INTERPRETACAO",
+            "HIPOTESE",
+            "RECOMENDACAO"
+          ]
+        },
+        "verificacao_atual": {
+          "type": "boolean"
+        },
+        "evidencias": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/vinculo"
+          },
+          "uniqueItems": true
+        },
+        "justificativa": {
+          "type": "string",
+          "minLength": 1
+        },
+        "limitacoes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "id",
+        "texto",
+        "localizador",
+        "estado",
+        "prioridade",
+        "camada",
+        "verificacao_atual",
+        "evidencias",
+        "justificativa",
+        "limitacoes"
+      ],
+      "additionalProperties": false
+    },
+    "pendencia": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "^[A-Za-z0-9_-]{1,64}$"
+        },
+        "afirmacao_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[A-Za-z0-9_-]{1,64}$"
+          },
+          "uniqueItems": true
+        },
+        "descricao": {
+          "type": "string",
+          "minLength": 1
+        },
+        "impacto": {
+          "type": "string",
+          "minLength": 1
+        },
+        "acao": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "afirmacao_ids",
+        "descricao",
+        "impacto",
+        "acao"
+      ],
+      "additionalProperties": false
+    },
+    "material": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "titulo": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "localizacao": {
+          "type": "string",
+          "minLength": 1
+        },
+        "versao": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "data_documento": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+          "format": "date"
+        },
+        "sha256_arquivo": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "sha256_texto": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "id",
+        "titulo",
+        "localizacao",
+        "versao",
+        "data_documento",
+        "sha256_arquivo",
+        "sha256_texto"
+      ],
+      "additionalProperties": false
+    },
+    "revisao_anterior": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "localizacao": {
+          "type": "string",
+          "minLength": 1
+        },
+        "versao_dossie": {
+          "type": "string",
+          "minLength": 1
+        },
+        "material_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "versao_material": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "sha256_arquivo": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        }
+      },
+      "required": [
+        "localizacao",
+        "versao_dossie",
+        "material_id",
+        "versao_material",
+        "sha256_arquivo"
+      ],
+      "additionalProperties": false
+    },
+    "mudanca": {
+      "type": "object",
+      "properties": {
+        "afirmacao_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "tipo": {
+          "type": "string",
+          "enum": [
+            "incluida",
+            "alterada",
+            "removida"
+          ]
+        },
+        "estado_anterior": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "SUSTENTADA",
+            "PARCIALMENTE_SUSTENTADA",
+            "CONTRADITA",
+            "NAO_VERIFICADA",
+            null
+          ]
+        },
+        "estado_atual": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "SUSTENTADA",
+            "PARCIALMENTE_SUSTENTADA",
+            "CONTRADITA",
+            "NAO_VERIFICADA",
+            null
+          ]
+        },
+        "motivo": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidencia_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true
+        }
+      },
+      "required": [
+        "afirmacao_id",
+        "tipo",
+        "estado_anterior",
+        "estado_atual",
+        "motivo",
+        "evidencia_ids"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

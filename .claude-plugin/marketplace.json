@@ -10,6 +10,19 @@
       "name": "coiote-mistico",
       "source": "./plugins/coiote-mistico",
       "description": "Consulta de tarô Rider-Waite-Smith com selo SHA-256 verificável e prompt de imagem da tiragem no padrão MidasFlow."
+    },
+    {
+      "name": "pharmaai-governance",
+      "source": "./plugins/pharmaai-governance",
+      "description": "Assessoria regulatória e de governança de IA para o setor farmacêutico e da saúde: auditoria de evidências, análise normativa, mudanças regulatórias, lacunas de políticas, avaliação de IA e de fornecedores.",
+      "category": "Regulatório",
+      "tags": [
+        "regulatório",
+        "compliance",
+        "governança de IA",
+        "Anvisa",
+        "auditoria"
+      ]
     }
   ]
 }

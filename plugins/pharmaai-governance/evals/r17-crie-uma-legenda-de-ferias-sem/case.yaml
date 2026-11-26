@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: r17-crie-uma-legenda-de-ferias-sem
+expected_outcome: |
+  Não acionar estas habilidades por coincidência de palavras.
