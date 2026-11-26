@@ -6,8 +6,10 @@ Este plugin usa duas licenças, conforme a parte:
 1. Código: plugins/coiote-mistico/skills/consulta-oracular/scripts/tiragem.py
    Licença MIT. Texto integral em LICENSES/MIT.txt.
 
-2. Todo o restante: SKILL.md, README.md, ícone (assets/coiote-mistico.png),
-   persona, roteiro da consulta e textos do plugin
+2. Todo o restante: o catálogo das 78 cartas
+   (plugins/coiote-mistico/skills/consulta-oracular/references/catalogo.json), SKILL.md,
+   README.md, ícone (plugins/coiote-mistico/assets/coiote-mistico.png), persona, roteiro da
+   consulta e textos do plugin
    Creative Commons Atribuição-NãoComercial-SemDerivações 4.0 Internacional
    (CC BY-NC-ND 4.0). Texto integral em LICENSES/CC-BY-NC-ND-4.0.txt e em
    https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode

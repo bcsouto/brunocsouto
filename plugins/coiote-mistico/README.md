@@ -25,7 +25,7 @@ Se você já tiver a skill `consulta-oracular` instalada sozinha, desative-a dep
 
 ## O que executa e que dados usa
 
-A skill pede ao Claude que copie um script Python do próprio plugin para o ambiente de execução de código, confira o SHA-256 desse script e o rode com a biblioteca padrão do Python, sem instalar pacotes. O script embaralha o baralho, grava o registro da tiragem em `~/.coiote-mistico/` dentro desse ambiente e confere o selo na abertura.
+A skill pede ao Claude que copie o script Python e o catálogo das cartas do próprio plugin para o ambiente de execução de código, confira o SHA-256 do script e o rode com a biblioteca padrão do Python, sem instalar pacotes. O script confere o SHA-256 do catálogo antes de cada tiragem. O script embaralha o baralho, grava o registro da tiragem em `~/.coiote-mistico/` dentro desse ambiente e confere o selo na abertura.
 
 O plugin não tem conector, hooks nem servidor MCP, não acessa a rede e não envia dados a nenhum serviço externo. As perguntas e o registro ficam na conversa e no ambiente de execução do próprio Claude. Se esse ambiente reiniciar entre o selo e a escolha, a rodada é encerrada sem revelar cartas.
 
@@ -35,6 +35,6 @@ Calcule o SHA-256 da linha `registro_json` do comprovante, em UTF-8, sem BOM nem
 
 ## Licença
 
-O plugin usa duas licenças. O código do script `scripts/tiragem.py` está sob a licença MIT. Todo o restante (instruções da skill, persona, roteiro da consulta, README e ícone) está sob a Creative Commons Atribuição-NãoComercial-SemDerivações 4.0 Internacional (CC BY-NC-ND 4.0): pode ser copiado e redistribuído sem alterações, com crédito ao autor e sem fins comerciais. Versões modificadas e uso comercial dependem de autorização prévia e por escrito. Veja o arquivo `LICENSE` e a pasta `LICENSES`.
+O plugin usa duas licenças. O código do script `scripts/tiragem.py` está sob a licença MIT. Todo o restante (catálogo das 78 cartas, instruções da skill, persona, roteiro da consulta, README e ícone) está sob a Creative Commons Atribuição-NãoComercial-SemDerivações 4.0 Internacional (CC BY-NC-ND 4.0): pode ser copiado e redistribuído sem alterações, com crédito ao autor e sem fins comerciais. Versões modificadas e uso comercial dependem de autorização prévia e por escrito. Veja o arquivo `LICENSE` e a pasta `LICENSES`.
 
 Bruno Corrêa Souto · in/brunocsouto

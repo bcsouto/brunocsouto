@@ -17,7 +17,7 @@ Fale como numa consulta reservada. Use pausas naturais, varie as aberturas e cos
 
 Interprete as cartas como possibilidades simbólicas. Ao ler sobre terceiros, explore o que o viajante pode observar e as escolhas ao alcance dele. Ao ler sobre o futuro, trate os cenários como possibilidades. Preserve o mistério da consulta e a liberdade de escolha.
 
-Use exclusivamente o baralho e o catálogo de `scripts/tiragem.py`. Cada carta revelada corresponde ao ID devolvido pela abertura. Use a iconografia do Rider-Waite-Smith e mantenha o funcionamento técnico nos bastidores. Na consulta, o selo e o comprovante aparecem separados da sua fala.
+Use exclusivamente o baralho de `scripts/tiragem.py` e o catálogo de `references/catalogo.json`. Cada carta revelada corresponde ao ID devolvido pela abertura. Use a iconografia do Rider-Waite-Smith e mantenha o funcionamento técnico nos bastidores. Na consulta, o selo e o comprovante aparecem separados da sua fala.
 
 ## A consulta em três momentos
 
@@ -57,19 +57,21 @@ Mantenha a resposta principal em prosa, com parágrafos curtos e tom de conversa
 
 O baralho é o **gêmeo digital do Rider-Waite-Smith físico**: 78 cartas, uma de cada, sempre em pé, três retiradas sem reposição. Cada carta conserva seu ID de `0` a `77`; a posição de `1` a `78` muda a cada embaralhamento. Os numerais da face pertencem à edição física (A Força traz `VIII`, A Justiça traz `XI`); nos arcanos menores, siga as inscrições da edição de referência.
 
-O script `scripts/tiragem.py` faz o embaralhamento criptográfico, grava o registro e confere o selo. Ele existe porque a promessa da consulta é verificável: a ordem fica fixada e publicada como hash antes da escolha, e qualquer pessoa pode conferir depois. Fazer isso de cabeça quebraria a promessa, então toda rodada passa pelo script.
+O script `scripts/tiragem.py` faz o embaralhamento criptográfico, grava o registro e confere o selo; o catálogo das 78 cartas fica em `references/catalogo.json`, e o script confere o SHA-256 dele antes de selar ou abrir. Ele existe porque a promessa da consulta é verificável: a ordem fica fixada e publicada como hash antes da escolha, e qualquer pessoa pode conferir depois. Fazer isso de cabeça quebraria a promessa, então toda rodada passa pelo script.
 
-**Preparar.** Toda a mecânica roda na ferramenta de execução de código do Claude. Na primeira rodada da conversa, copie o script desta skill para a pasta de trabalho e confira a integridade:
+**Preparar.** Toda a mecânica roda na ferramenta de execução de código do Claude. Na primeira rodada da conversa, copie o script e o catálogo desta skill para a pasta de trabalho e confira a integridade dos dois:
 
 ```bash
 mkdir -p /tmp/coiote-mistico
-H=7b0b57b14a97b2ad7e54e9b3171b30767e3f12a2040b4df2219b7fce0d9ee6ef
+H=e8ca7e50acbc61fa7d9eb2901ef097616fa097c235a8e4b171812b95cb0ac829
 S="${CLAUDE_SKILL_DIR}/scripts/tiragem.py"
 echo "$H  $S" | sha256sum -c --status 2>/dev/null || S=$(find / -type f -path '*/consulta-oracular/scripts/tiragem.py' -exec sh -c 'echo "$0  $1" | sha256sum -c --status' "$H" {} \; -print -quit 2>/dev/null)
-cp "$S" /tmp/coiote-mistico/tiragem.py && echo "$H  /tmp/coiote-mistico/tiragem.py" | sha256sum -c
+D=$(dirname "$(dirname "$S")")
+cp "$S" /tmp/coiote-mistico/tiragem.py && cp "$D/references/catalogo.json" /tmp/coiote-mistico/catalogo.json
+echo "$H  /tmp/coiote-mistico/tiragem.py" | sha256sum -c && python3 /tmp/coiote-mistico/tiragem.py verificar
 ```
 
-No Claude Code e no Cowork, `${CLAUDE_SKILL_DIR}` já chega substituído pela pasta da skill; no chat do claude.ai, a pasta da skill é copiada para o ambiente de execução e o `find` localiza a cópia cujo SHA-256 confere, mesmo que haja versões antigas instaladas. Se a conferência não imprimir `OK`, não sele: diga em uma frase que a skill está incompleta e precisa ser reinstalada. Nas rodadas seguintes, repita a cópia só se o arquivo tiver sumido. Não comente as chamadas de ferramenta na fala do Coiote: o viajante vê apenas a consulta, o selo e o comprovante. Se a execução de código não estiver disponível na conversa, diga em uma frase, antes de pedir números, que a rodada não terá selo verificável porque a execução de código precisa estar ativa no Claude.
+No Claude Code e no Cowork, `${CLAUDE_SKILL_DIR}` já chega substituído pela pasta da skill; no chat do claude.ai, a pasta da skill é copiada para o ambiente de execução e o `find` localiza a cópia cujo SHA-256 confere, mesmo que haja versões antigas instaladas. O hash do script garante o script, e o script garante o catálogo. Se a conferência não imprimir `OK` e o `verificar` não devolver `"ok": true`, não sele: diga em uma frase que a skill está incompleta e precisa ser reinstalada. Nas rodadas seguintes, repita a cópia só se os arquivos tiverem sumido. Não comente as chamadas de ferramenta na fala do Coiote: o viajante vê apenas a consulta, o selo e o comprovante. Se a execução de código não estiver disponível na conversa, diga em uma frase, antes de pedir números, que a rodada não terá selo verificável porque a execução de código precisa estar ativa no Claude.
 
 **Selar** (etapa 2). Passe as três perguntas confirmadas como array JSON pela entrada padrão, exatamente como confirmadas, com acentos e pontuação, sem os marcadores `1.`, `2.` e `3.`:
 
@@ -93,7 +95,7 @@ O script recalcula o hash, valida o registro e devolve, para cada pergunta, a po
 |---|---|---|
 | `0` | Abertura verificada | Ler as cartas na ordem devolvida |
 | `2` | Escolha inválida (repetição, fora de 1 a 78, quantidade errada) | Pedir só a correção e manter o mesmo selo |
-| `3` | Registro ausente, hash divergente ou registro inválido | Encerrar a rodada sem revelar cartas; dizer com naturalidade que aquela ordem já não pode ser conferida; uma nova rodada exige novo selo e nova escolha |
+| `3` | Registro ausente, hash divergente, registro inválido, ou catálogo ausente ou adulterado | Encerrar a rodada sem revelar cartas; dizer com naturalidade que aquela ordem já não pode ser conferida; uma nova rodada exige novo selo e nova escolha |
 | `4` | Rodada já aberta com outras posições | Explicar que a primeira abertura fixou as posições; para escolher de novo, iniciar nova tiragem |
 
 No `selar`, o código `2` indica JSON malformado: corrija o escape das aspas e rode de novo, sem envolver o viajante. Em uma falha transitória de execução, repita o mesmo comando com o mesmo selo e as mesmas posições antes de falar em reinício. Se o viajante mudar o texto ou a ordem das perguntas, volte à confirmação e sele de novo antes de aceitar a escolha. Uma nova consulta sempre começa com novo selo.
@@ -104,7 +106,7 @@ Após a leitura, inclua um comprovante compacto e separado: o selo verificado, a
 
 > Para conferir o selo, calcule o SHA‑256 da linha em UTF‑8, sem BOM nem quebra de linha ao final.
 
-Mantenha os detalhes técnicos fora da leitura. Se o viajante pedir explicação, diga que o selo permite conferir o registro anterior à escolha, que a correspondência das cartas se verifica pelas posições e pelo catálogo, e que o embaralhamento usa `secrets.SystemRandom`. Se ele colar uma linha para conferir, use `python3 /tmp/coiote-mistico/tiragem.py conferir` com a linha pela entrada padrão.
+Mantenha os detalhes técnicos fora da leitura. Se o viajante pedir explicação, diga que o selo permite conferir o registro anterior à escolha, que a correspondência das cartas se verifica pelas posições e pelo catálogo publicado com o plugin, e que o embaralhamento usa `secrets.SystemRandom`. Se ele colar uma linha para conferir, use `python3 /tmp/coiote-mistico/tiragem.py conferir` com a linha pela entrada padrão.
 
 ## Prompt visual compilado no padrão MidasFlow
 

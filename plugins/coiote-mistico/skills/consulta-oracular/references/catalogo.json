@@ -1,0 +1,548 @@
+[
+  {
+    "id": 0,
+    "nome": "O Louco",
+    "nome_en": "The Fool",
+    "numeral_face": "0",
+    "elementos": "Viajante à beira do precipício, rosa branca e cão."
+  },
+  {
+    "id": 1,
+    "nome": "O Mago",
+    "nome_en": "The Magician",
+    "numeral_face": "I",
+    "elementos": "Bastão erguido, símbolo do infinito e quatro emblemas sobre a mesa."
+  },
+  {
+    "id": 2,
+    "nome": "A Sacerdotisa",
+    "nome_en": "The High Priestess",
+    "numeral_face": "II",
+    "elementos": "Pilares B e J, véu com romãs e rolo parcialmente coberto."
+  },
+  {
+    "id": 3,
+    "nome": "A Imperatriz",
+    "nome_en": "The Empress",
+    "numeral_face": "III",
+    "elementos": "Trigo, coroa de estrelas e escudo com o símbolo de Vênus."
+  },
+  {
+    "id": 4,
+    "nome": "O Imperador",
+    "nome_en": "The Emperor",
+    "numeral_face": "IV",
+    "elementos": "Trono com cabeças de carneiro e montanhas."
+  },
+  {
+    "id": 5,
+    "nome": "O Hierofante",
+    "nome_en": "The Hierophant",
+    "numeral_face": "V",
+    "elementos": "Tiara, dois acólitos e chaves cruzadas."
+  },
+  {
+    "id": 6,
+    "nome": "Os Enamorados",
+    "nome_en": "The Lovers",
+    "numeral_face": "VI",
+    "elementos": "Duas figuras sob um anjo e uma serpente em uma das árvores."
+  },
+  {
+    "id": 7,
+    "nome": "O Carro",
+    "nome_en": "The Chariot",
+    "numeral_face": "VII",
+    "elementos": "Condutor sob dossel estrelado, com uma esfinge clara e outra escura."
+  },
+  {
+    "id": 8,
+    "nome": "A Força",
+    "nome_en": "Strength",
+    "numeral_face": "VIII",
+    "elementos": "Mulher junto à boca de um leão, com o símbolo do infinito acima da cabeça."
+  },
+  {
+    "id": 9,
+    "nome": "O Eremita",
+    "nome_en": "The Hermit",
+    "numeral_face": "IX",
+    "elementos": "Figura encapuzada com cajado e estrela dentro da lanterna."
+  },
+  {
+    "id": 10,
+    "nome": "A Roda da Fortuna",
+    "nome_en": "Wheel of Fortune",
+    "numeral_face": "X",
+    "elementos": "Roda inscrita, esfinge acima e quatro figuras aladas nos cantos."
+  },
+  {
+    "id": 11,
+    "nome": "A Justiça",
+    "nome_en": "Justice",
+    "numeral_face": "XI",
+    "elementos": "Figura entre pilares, com balança e espada erguida."
+  },
+  {
+    "id": 12,
+    "nome": "O Enforcado",
+    "nome_en": "The Hanged Man",
+    "numeral_face": "XII",
+    "elementos": "Figura suspensa por um pé, com a outra perna dobrada e uma auréola."
+  },
+  {
+    "id": 13,
+    "nome": "A Morte",
+    "nome_en": "Death",
+    "numeral_face": "XIII",
+    "elementos": "Esqueleto em armadura, cavalo branco e estandarte escuro com rosa branca."
+  },
+  {
+    "id": 14,
+    "nome": "A Temperança",
+    "nome_en": "Temperance",
+    "numeral_face": "XIV",
+    "elementos": "Anjo verte líquido entre duas taças, com um pé na água e outro em terra."
+  },
+  {
+    "id": 15,
+    "nome": "O Diabo",
+    "nome_en": "The Devil",
+    "numeral_face": "XV",
+    "elementos": "Figura alada sobre pedestal e duas figuras humanas acorrentadas."
+  },
+  {
+    "id": 16,
+    "nome": "A Torre",
+    "nome_en": "The Tower",
+    "numeral_face": "XVI",
+    "elementos": "Raio, coroa deslocada e figuras em queda."
+  },
+  {
+    "id": 17,
+    "nome": "A Estrela",
+    "nome_en": "The Star",
+    "numeral_face": "XVII",
+    "elementos": "Uma estrela grande, sete menores e água vertida de dois jarros."
+  },
+  {
+    "id": 18,
+    "nome": "A Lua",
+    "nome_en": "The Moon",
+    "numeral_face": "XVIII",
+    "elementos": "Cão, lobo e crustáceo que emerge da água, com duas torres ao fundo."
+  },
+  {
+    "id": 19,
+    "nome": "O Sol",
+    "nome_en": "The Sun",
+    "numeral_face": "XIX",
+    "elementos": "Criança em cavalo branco, estandarte vermelho e girassóis."
+  },
+  {
+    "id": 20,
+    "nome": "O Julgamento",
+    "nome_en": "Judgement",
+    "numeral_face": "XX",
+    "elementos": "Anjo com trombeta e figuras que se erguem de caixões."
+  },
+  {
+    "id": 21,
+    "nome": "O Mundo",
+    "nome_en": "The World",
+    "numeral_face": "XXI",
+    "elementos": "Figura dançante dentro de uma grinalda, com quatro figuras nos cantos."
+  },
+  {
+    "id": 22,
+    "nome": "Ás de Paus",
+    "nome_en": "Ace of Wands",
+    "numeral_face": null,
+    "elementos": "Mão saindo da nuvem segura um bastão com brotos."
+  },
+  {
+    "id": 23,
+    "nome": "Dois de Paus",
+    "nome_en": "Two of Wands",
+    "numeral_face": null,
+    "elementos": "Figura com globo entre dois bastões, no alto de uma muralha."
+  },
+  {
+    "id": 24,
+    "nome": "Três de Paus",
+    "nome_en": "Three of Wands",
+    "numeral_face": null,
+    "elementos": "Figura de costas entre três bastões, olhando embarcações ao longe."
+  },
+  {
+    "id": 25,
+    "nome": "Quatro de Paus",
+    "nome_en": "Four of Wands",
+    "numeral_face": null,
+    "elementos": "Guirlanda suspensa nos quatro bastões e figuras em celebração."
+  },
+  {
+    "id": 26,
+    "nome": "Cinco de Paus",
+    "nome_en": "Five of Wands",
+    "numeral_face": null,
+    "elementos": "Cinco jovens erguem bastões que se cruzam."
+  },
+  {
+    "id": 27,
+    "nome": "Seis de Paus",
+    "nome_en": "Six of Wands",
+    "numeral_face": null,
+    "elementos": "Figura a cavalo com coroa de louros e outra coroa no bastão."
+  },
+  {
+    "id": 28,
+    "nome": "Sete de Paus",
+    "nome_en": "Seven of Wands",
+    "numeral_face": null,
+    "elementos": "Figura em terreno elevado empunha um bastão diante de seis que sobem."
+  },
+  {
+    "id": 29,
+    "nome": "Oito de Paus",
+    "nome_en": "Eight of Wands",
+    "numeral_face": null,
+    "elementos": "Oito bastões cruzam o céu em diagonal."
+  },
+  {
+    "id": 30,
+    "nome": "Nove de Paus",
+    "nome_en": "Nine of Wands",
+    "numeral_face": null,
+    "elementos": "Figura com a cabeça enfaixada, um bastão na mão e oito atrás."
+  },
+  {
+    "id": 31,
+    "nome": "Dez de Paus",
+    "nome_en": "Ten of Wands",
+    "numeral_face": null,
+    "elementos": "Figura curvada carrega dez bastões em direção às construções."
+  },
+  {
+    "id": 32,
+    "nome": "Pajem de Paus",
+    "nome_en": "Page of Wands",
+    "numeral_face": null,
+    "elementos": "Jovem contempla um bastão erguido em paisagem árida."
+  },
+  {
+    "id": 33,
+    "nome": "Cavaleiro de Paus",
+    "nome_en": "Knight of Wands",
+    "numeral_face": null,
+    "elementos": "Cavaleiro com bastão sobre cavalo que ergue as patas dianteiras."
+  },
+  {
+    "id": 34,
+    "nome": "Rainha de Paus",
+    "nome_en": "Queen of Wands",
+    "numeral_face": null,
+    "elementos": "Girassol na mão e gato preto aos pés."
+  },
+  {
+    "id": 35,
+    "nome": "Rei de Paus",
+    "nome_en": "King of Wands",
+    "numeral_face": null,
+    "elementos": "Bastão, motivos de salamandra e uma salamandra junto ao trono."
+  },
+  {
+    "id": 36,
+    "nome": "Ás de Copas",
+    "nome_en": "Ace of Cups",
+    "numeral_face": null,
+    "elementos": "Mão sustenta um cálice transbordante sob uma pomba."
+  },
+  {
+    "id": 37,
+    "nome": "Dois de Copas",
+    "nome_en": "Two of Cups",
+    "numeral_face": null,
+    "elementos": "Duas taças erguidas sob um caduceu e uma cabeça de leão alada."
+  },
+  {
+    "id": 38,
+    "nome": "Três de Copas",
+    "nome_en": "Three of Cups",
+    "numeral_face": null,
+    "elementos": "Três figuras erguem taças sobre um chão com frutos da colheita."
+  },
+  {
+    "id": 39,
+    "nome": "Quatro de Copas",
+    "nome_en": "Four of Cups",
+    "numeral_face": null,
+    "elementos": "Figura junto à árvore, três taças no chão e uma quarta oferecida pela nuvem."
+  },
+  {
+    "id": 40,
+    "nome": "Cinco de Copas",
+    "nome_en": "Five of Cups",
+    "numeral_face": null,
+    "elementos": "Figura de capa escura, três taças tombadas e duas de pé."
+  },
+  {
+    "id": 41,
+    "nome": "Seis de Copas",
+    "nome_en": "Six of Cups",
+    "numeral_face": null,
+    "elementos": "Figura jovem oferece a outra uma taça com flores brancas."
+  },
+  {
+    "id": 42,
+    "nome": "Sete de Copas",
+    "nome_en": "Seven of Cups",
+    "numeral_face": null,
+    "elementos": "Silhueta diante de sete taças sobre nuvens, cada qual com uma visão."
+  },
+  {
+    "id": 43,
+    "nome": "Oito de Copas",
+    "nome_en": "Eight of Cups",
+    "numeral_face": null,
+    "elementos": "Figura se afasta das oito taças sob a lua."
+  },
+  {
+    "id": 44,
+    "nome": "Nove de Copas",
+    "nome_en": "Nine of Cups",
+    "numeral_face": null,
+    "elementos": "Figura sentada de braços cruzados, com nove taças atrás."
+  },
+  {
+    "id": 45,
+    "nome": "Dez de Copas",
+    "nome_en": "Ten of Cups",
+    "numeral_face": null,
+    "elementos": "Dez taças em um arco-íris sobre uma família."
+  },
+  {
+    "id": 46,
+    "nome": "Pajem de Copas",
+    "nome_en": "Page of Cups",
+    "numeral_face": null,
+    "elementos": "Jovem olha para o peixe que emerge da taça."
+  },
+  {
+    "id": 47,
+    "nome": "Cavaleiro de Copas",
+    "nome_en": "Knight of Cups",
+    "numeral_face": null,
+    "elementos": "Cavaleiro estende uma taça sobre um cavalo claro."
+  },
+  {
+    "id": 48,
+    "nome": "Rainha de Copas",
+    "nome_en": "Queen of Cups",
+    "numeral_face": null,
+    "elementos": "Rainha à beira da água contempla um cálice fechado e ornamentado."
+  },
+  {
+    "id": 49,
+    "nome": "Rei de Copas",
+    "nome_en": "King of Cups",
+    "numeral_face": null,
+    "elementos": "Rei com taça e cetro em um trono cercado pelo mar."
+  },
+  {
+    "id": 50,
+    "nome": "Ás de Espadas",
+    "nome_en": "Ace of Swords",
+    "numeral_face": null,
+    "elementos": "Mão na nuvem ergue uma espada cuja ponta passa por uma coroa."
+  },
+  {
+    "id": 51,
+    "nome": "Dois de Espadas",
+    "nome_en": "Two of Swords",
+    "numeral_face": null,
+    "elementos": "Figura vendada, espadas cruzadas e lua crescente sobre o mar."
+  },
+  {
+    "id": 52,
+    "nome": "Três de Espadas",
+    "nome_en": "Three of Swords",
+    "numeral_face": null,
+    "elementos": "Três espadas atravessam um coração sob a chuva."
+  },
+  {
+    "id": 53,
+    "nome": "Quatro de Espadas",
+    "nome_en": "Four of Swords",
+    "numeral_face": null,
+    "elementos": "Efígie deitada, três espadas na parede e uma junto ao túmulo."
+  },
+  {
+    "id": 54,
+    "nome": "Cinco de Espadas",
+    "nome_en": "Five of Swords",
+    "numeral_face": null,
+    "elementos": "Figura recolhe espadas enquanto outras duas se afastam."
+  },
+  {
+    "id": 55,
+    "nome": "Seis de Espadas",
+    "nome_en": "Six of Swords",
+    "numeral_face": null,
+    "elementos": "Barco com passageiros e seis espadas fincadas."
+  },
+  {
+    "id": 56,
+    "nome": "Sete de Espadas",
+    "nome_en": "Seven of Swords",
+    "numeral_face": null,
+    "elementos": "Figura leva cinco espadas e deixa duas junto ao acampamento."
+  },
+  {
+    "id": 57,
+    "nome": "Oito de Espadas",
+    "nome_en": "Eight of Swords",
+    "numeral_face": null,
+    "elementos": "Figura vendada e amarrada, cercada por oito espadas."
+  },
+  {
+    "id": 58,
+    "nome": "Nove de Espadas",
+    "nome_en": "Nine of Swords",
+    "numeral_face": null,
+    "elementos": "Figura sentada na cama com o rosto entre as mãos, sob nove espadas."
+  },
+  {
+    "id": 59,
+    "nome": "Dez de Espadas",
+    "nome_en": "Ten of Swords",
+    "numeral_face": null,
+    "elementos": "Figura caída com dez espadas nas costas e uma faixa clara no horizonte."
+  },
+  {
+    "id": 60,
+    "nome": "Pajem de Espadas",
+    "nome_en": "Page of Swords",
+    "numeral_face": null,
+    "elementos": "Jovem sustenta a espada com as duas mãos em colina ventosa."
+  },
+  {
+    "id": 61,
+    "nome": "Cavaleiro de Espadas",
+    "nome_en": "Knight of Swords",
+    "numeral_face": null,
+    "elementos": "Cavaleiro com espada erguida sobre cavalo em disparada."
+  },
+  {
+    "id": 62,
+    "nome": "Rainha de Espadas",
+    "nome_en": "Queen of Swords",
+    "numeral_face": null,
+    "elementos": "Rainha com espada vertical e a mão livre estendida."
+  },
+  {
+    "id": 63,
+    "nome": "Rei de Espadas",
+    "nome_en": "King of Swords",
+    "numeral_face": null,
+    "elementos": "Rei sentado de frente, com espada erguida."
+  },
+  {
+    "id": 64,
+    "nome": "Ás de Ouros",
+    "nome_en": "Ace of Pentacles",
+    "numeral_face": null,
+    "elementos": "Mão apresenta um pentáculo sobre um jardim com arco vegetal."
+  },
+  {
+    "id": 65,
+    "nome": "Dois de Ouros",
+    "nome_en": "Two of Pentacles",
+    "numeral_face": null,
+    "elementos": "Dois pentáculos ligados por uma alça em forma de infinito, com barcos ao fundo."
+  },
+  {
+    "id": 66,
+    "nome": "Três de Ouros",
+    "nome_en": "Three of Pentacles",
+    "numeral_face": null,
+    "elementos": "Artesão e duas figuras sob um arco de pedra com três pentáculos."
+  },
+  {
+    "id": 67,
+    "nome": "Quatro de Ouros",
+    "nome_en": "Four of Pentacles",
+    "numeral_face": null,
+    "elementos": "Um pentáculo junto ao peito, um sobre a coroa e dois sob os pés."
+  },
+  {
+    "id": 68,
+    "nome": "Cinco de Ouros",
+    "nome_en": "Five of Pentacles",
+    "numeral_face": null,
+    "elementos": "Duas figuras passam pela neve diante de um vitral iluminado."
+  },
+  {
+    "id": 69,
+    "nome": "Seis de Ouros",
+    "nome_en": "Six of Pentacles",
+    "numeral_face": null,
+    "elementos": "Figura com balança distribui moedas a uma pessoa ajoelhada."
+  },
+  {
+    "id": 70,
+    "nome": "Sete de Ouros",
+    "nome_en": "Seven of Pentacles",
+    "numeral_face": null,
+    "elementos": "Pessoa apoiada em uma ferramenta contempla a planta com pentáculos."
+  },
+  {
+    "id": 71,
+    "nome": "Oito de Ouros",
+    "nome_en": "Eight of Pentacles",
+    "numeral_face": null,
+    "elementos": "Artesão grava um pentáculo, com outros expostos ao lado."
+  },
+  {
+    "id": 72,
+    "nome": "Nove de Ouros",
+    "nome_en": "Nine of Pentacles",
+    "numeral_face": null,
+    "elementos": "Figura em um vinhedo, com falcão encapuzado sobre a luva."
+  },
+  {
+    "id": 73,
+    "nome": "Dez de Ouros",
+    "nome_en": "Ten of Pentacles",
+    "numeral_face": null,
+    "elementos": "Pessoas de diferentes gerações e dois cães sob um arco."
+  },
+  {
+    "id": 74,
+    "nome": "Pajem de Ouros",
+    "nome_en": "Page of Pentacles",
+    "numeral_face": null,
+    "elementos": "Jovem contempla um pentáculo erguido entre as mãos."
+  },
+  {
+    "id": 75,
+    "nome": "Cavaleiro de Ouros",
+    "nome_en": "Knight of Pentacles",
+    "numeral_face": null,
+    "elementos": "Cavaleiro sustenta um pentáculo sobre um cavalo escuro parado."
+  },
+  {
+    "id": 76,
+    "nome": "Rainha de Ouros",
+    "nome_en": "Queen of Pentacles",
+    "numeral_face": null,
+    "elementos": "Rainha contempla um pentáculo no colo, com um coelho no primeiro plano."
+  },
+  {
+    "id": 77,
+    "nome": "Rei de Ouros",
+    "nome_en": "King of Pentacles",
+    "numeral_face": null,
+    "elementos": "Rei com pentáculo e cetro, em trono com cabeças de touro, cercado por videiras."
+  }
+]

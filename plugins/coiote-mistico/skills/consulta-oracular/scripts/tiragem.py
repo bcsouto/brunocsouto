@@ -13,86 +13,10 @@ from pathlib import Path
 VERSAO = "TARO-RWS-3Q-V1"
 PASTA = Path(os.environ.get("COIOTE_DIR", str(Path.home() / ".coiote-mistico")))
 
-CATALOGO = [
-    (0, "O Louco", "The Fool", "0", "Viajante à beira do precipício, rosa branca e cão."),
-    (1, "O Mago", "The Magician", "I", "Bastão erguido, símbolo do infinito e quatro emblemas sobre a mesa."),
-    (2, "A Sacerdotisa", "The High Priestess", "II", "Pilares B e J, véu com romãs e rolo parcialmente coberto."),
-    (3, "A Imperatriz", "The Empress", "III", "Trigo, coroa de estrelas e escudo com o símbolo de Vênus."),
-    (4, "O Imperador", "The Emperor", "IV", "Trono com cabeças de carneiro e montanhas."),
-    (5, "O Hierofante", "The Hierophant", "V", "Tiara, dois acólitos e chaves cruzadas."),
-    (6, "Os Enamorados", "The Lovers", "VI", "Duas figuras sob um anjo e uma serpente em uma das árvores."),
-    (7, "O Carro", "The Chariot", "VII", "Condutor sob dossel estrelado, com uma esfinge clara e outra escura."),
-    (8, "A Força", "Strength", "VIII", "Mulher junto à boca de um leão, com o símbolo do infinito acima da cabeça."),
-    (9, "O Eremita", "The Hermit", "IX", "Figura encapuzada com cajado e estrela dentro da lanterna."),
-    (10, "A Roda da Fortuna", "Wheel of Fortune", "X", "Roda inscrita, esfinge acima e quatro figuras aladas nos cantos."),
-    (11, "A Justiça", "Justice", "XI", "Figura entre pilares, com balança e espada erguida."),
-    (12, "O Enforcado", "The Hanged Man", "XII", "Figura suspensa por um pé, com a outra perna dobrada e uma auréola."),
-    (13, "A Morte", "Death", "XIII", "Esqueleto em armadura, cavalo branco e estandarte escuro com rosa branca."),
-    (14, "A Temperança", "Temperance", "XIV", "Anjo verte líquido entre duas taças, com um pé na água e outro em terra."),
-    (15, "O Diabo", "The Devil", "XV", "Figura alada sobre pedestal e duas figuras humanas acorrentadas."),
-    (16, "A Torre", "The Tower", "XVI", "Raio, coroa deslocada e figuras em queda."),
-    (17, "A Estrela", "The Star", "XVII", "Uma estrela grande, sete menores e água vertida de dois jarros."),
-    (18, "A Lua", "The Moon", "XVIII", "Cão, lobo e crustáceo que emerge da água, com duas torres ao fundo."),
-    (19, "O Sol", "The Sun", "XIX", "Criança em cavalo branco, estandarte vermelho e girassóis."),
-    (20, "O Julgamento", "Judgement", "XX", "Anjo com trombeta e figuras que se erguem de caixões."),
-    (21, "O Mundo", "The World", "XXI", "Figura dançante dentro de uma grinalda, com quatro figuras nos cantos."),
-    (22, "Ás de Paus", "Ace of Wands", None, "Mão saindo da nuvem segura um bastão com brotos."),
-    (23, "Dois de Paus", "Two of Wands", None, "Figura com globo entre dois bastões, no alto de uma muralha."),
-    (24, "Três de Paus", "Three of Wands", None, "Figura de costas entre três bastões, olhando embarcações ao longe."),
-    (25, "Quatro de Paus", "Four of Wands", None, "Guirlanda suspensa nos quatro bastões e figuras em celebração."),
-    (26, "Cinco de Paus", "Five of Wands", None, "Cinco jovens erguem bastões que se cruzam."),
-    (27, "Seis de Paus", "Six of Wands", None, "Figura a cavalo com coroa de louros e outra coroa no bastão."),
-    (28, "Sete de Paus", "Seven of Wands", None, "Figura em terreno elevado empunha um bastão diante de seis que sobem."),
-    (29, "Oito de Paus", "Eight of Wands", None, "Oito bastões cruzam o céu em diagonal."),
-    (30, "Nove de Paus", "Nine of Wands", None, "Figura com a cabeça enfaixada, um bastão na mão e oito atrás."),
-    (31, "Dez de Paus", "Ten of Wands", None, "Figura curvada carrega dez bastões em direção às construções."),
-    (32, "Pajem de Paus", "Page of Wands", None, "Jovem contempla um bastão erguido em paisagem árida."),
-    (33, "Cavaleiro de Paus", "Knight of Wands", None, "Cavaleiro com bastão sobre cavalo que ergue as patas dianteiras."),
-    (34, "Rainha de Paus", "Queen of Wands", None, "Girassol na mão e gato preto aos pés."),
-    (35, "Rei de Paus", "King of Wands", None, "Bastão, motivos de salamandra e uma salamandra junto ao trono."),
-    (36, "Ás de Copas", "Ace of Cups", None, "Mão sustenta um cálice transbordante sob uma pomba."),
-    (37, "Dois de Copas", "Two of Cups", None, "Duas taças erguidas sob um caduceu e uma cabeça de leão alada."),
-    (38, "Três de Copas", "Three of Cups", None, "Três figuras erguem taças sobre um chão com frutos da colheita."),
-    (39, "Quatro de Copas", "Four of Cups", None, "Figura junto à árvore, três taças no chão e uma quarta oferecida pela nuvem."),
-    (40, "Cinco de Copas", "Five of Cups", None, "Figura de capa escura, três taças tombadas e duas de pé."),
-    (41, "Seis de Copas", "Six of Cups", None, "Figura jovem oferece a outra uma taça com flores brancas."),
-    (42, "Sete de Copas", "Seven of Cups", None, "Silhueta diante de sete taças sobre nuvens, cada qual com uma visão."),
-    (43, "Oito de Copas", "Eight of Cups", None, "Figura se afasta das oito taças sob a lua."),
-    (44, "Nove de Copas", "Nine of Cups", None, "Figura sentada de braços cruzados, com nove taças atrás."),
-    (45, "Dez de Copas", "Ten of Cups", None, "Dez taças em um arco-íris sobre uma família."),
-    (46, "Pajem de Copas", "Page of Cups", None, "Jovem olha para o peixe que emerge da taça."),
-    (47, "Cavaleiro de Copas", "Knight of Cups", None, "Cavaleiro estende uma taça sobre um cavalo claro."),
-    (48, "Rainha de Copas", "Queen of Cups", None, "Rainha à beira da água contempla um cálice fechado e ornamentado."),
-    (49, "Rei de Copas", "King of Cups", None, "Rei com taça e cetro em um trono cercado pelo mar."),
-    (50, "Ás de Espadas", "Ace of Swords", None, "Mão na nuvem ergue uma espada cuja ponta passa por uma coroa."),
-    (51, "Dois de Espadas", "Two of Swords", None, "Figura vendada, espadas cruzadas e lua crescente sobre o mar."),
-    (52, "Três de Espadas", "Three of Swords", None, "Três espadas atravessam um coração sob a chuva."),
-    (53, "Quatro de Espadas", "Four of Swords", None, "Efígie deitada, três espadas na parede e uma junto ao túmulo."),
-    (54, "Cinco de Espadas", "Five of Swords", None, "Figura recolhe espadas enquanto outras duas se afastam."),
-    (55, "Seis de Espadas", "Six of Swords", None, "Barco com passageiros e seis espadas fincadas."),
-    (56, "Sete de Espadas", "Seven of Swords", None, "Figura leva cinco espadas e deixa duas junto ao acampamento."),
-    (57, "Oito de Espadas", "Eight of Swords", None, "Figura vendada e amarrada, cercada por oito espadas."),
-    (58, "Nove de Espadas", "Nine of Swords", None, "Figura sentada na cama com o rosto entre as mãos, sob nove espadas."),
-    (59, "Dez de Espadas", "Ten of Swords", None, "Figura caída com dez espadas nas costas e uma faixa clara no horizonte."),
-    (60, "Pajem de Espadas", "Page of Swords", None, "Jovem sustenta a espada com as duas mãos em colina ventosa."),
-    (61, "Cavaleiro de Espadas", "Knight of Swords", None, "Cavaleiro com espada erguida sobre cavalo em disparada."),
-    (62, "Rainha de Espadas", "Queen of Swords", None, "Rainha com espada vertical e a mão livre estendida."),
-    (63, "Rei de Espadas", "King of Swords", None, "Rei sentado de frente, com espada erguida."),
-    (64, "Ás de Ouros", "Ace of Pentacles", None, "Mão apresenta um pentáculo sobre um jardim com arco vegetal."),
-    (65, "Dois de Ouros", "Two of Pentacles", None, "Dois pentáculos ligados por uma alça em forma de infinito, com barcos ao fundo."),
-    (66, "Três de Ouros", "Three of Pentacles", None, "Artesão e duas figuras sob um arco de pedra com três pentáculos."),
-    (67, "Quatro de Ouros", "Four of Pentacles", None, "Um pentáculo junto ao peito, um sobre a coroa e dois sob os pés."),
-    (68, "Cinco de Ouros", "Five of Pentacles", None, "Duas figuras passam pela neve diante de um vitral iluminado."),
-    (69, "Seis de Ouros", "Six of Pentacles", None, "Figura com balança distribui moedas a uma pessoa ajoelhada."),
-    (70, "Sete de Ouros", "Seven of Pentacles", None, "Pessoa apoiada em uma ferramenta contempla a planta com pentáculos."),
-    (71, "Oito de Ouros", "Eight of Pentacles", None, "Artesão grava um pentáculo, com outros expostos ao lado."),
-    (72, "Nove de Ouros", "Nine of Pentacles", None, "Figura em um vinhedo, com falcão encapuzado sobre a luva."),
-    (73, "Dez de Ouros", "Ten of Pentacles", None, "Pessoas de diferentes gerações e dois cães sob um arco."),
-    (74, "Pajem de Ouros", "Page of Pentacles", None, "Jovem contempla um pentáculo erguido entre as mãos."),
-    (75, "Cavaleiro de Ouros", "Knight of Pentacles", None, "Cavaleiro sustenta um pentáculo sobre um cavalo escuro parado."),
-    (76, "Rainha de Ouros", "Queen of Pentacles", None, "Rainha contempla um pentáculo no colo, com um coelho no primeiro plano."),
-    (77, "Rei de Ouros", "King of Pentacles", None, "Rei com pentáculo e cetro, em trono com cabeças de touro, cercado por videiras."),
-]
+CATALOGO_SHA256 = "10d09cfc98ab8a813ef54f7f93c61ae429ecb4f0ab6f8fddaa0a6ceb8150ee12"
+AQUI = Path(__file__).resolve().parent
+CATALOGO_CANDIDATOS = (AQUI / "catalogo.json", AQUI.parent / "references" / "catalogo.json")
+CAMPOS = {"id": int, "nome": str, "nome_en": str, "numeral_face": (str, type(None)), "elementos": str}
 
 
 def saida(codigo, **dados):
@@ -109,7 +33,30 @@ def sha256(dados):
     return hashlib.sha256(dados).hexdigest()
 
 
+def carregar_catalogo():
+    if "COIOTE_CATALOGO" in os.environ:
+        caminho = Path(os.environ["COIOTE_CATALOGO"])
+    else:
+        caminho = next((c for c in CATALOGO_CANDIDATOS if c.is_file()), CATALOGO_CANDIDATOS[0])
+    if not caminho.is_file():
+        saida(3, erro="catalogo_ausente", mensagem="O catálogo das cartas não foi encontrado.")
+    dados = caminho.read_bytes()
+    if sha256(dados) != CATALOGO_SHA256:
+        saida(3, erro="catalogo_divergente", mensagem="O catálogo das cartas não confere com o hash esperado.")
+    catalogo = json.loads(dados.decode("utf-8"))
+    valido = (
+        isinstance(catalogo, list) and len(catalogo) == 78
+        and all(isinstance(c, dict) and set(c) == set(CAMPOS)
+                and all(isinstance(c[k], t) and type(c[k]) is not bool for k, t in CAMPOS.items())
+                and c["id"] == i for i, c in enumerate(catalogo))
+    )
+    if not valido:
+        saida(3, erro="catalogo_invalido", mensagem="O catálogo das cartas tem estrutura inválida.")
+    return catalogo
+
+
 def selar():
+    carregar_catalogo()
     try:
         perguntas = json.loads(sys.stdin.read())
     except json.JSONDecodeError as erro:
@@ -175,6 +122,7 @@ def ler_posicoes(texto):
 def abrir(selo, texto):
     posicoes = ler_posicoes(texto)
     dados, perguntas, baralho = carregar(selo)
+    catalogo = carregar_catalogo()
     marca = PASTA / f"{selo}.abertura.json"
     if marca.is_file():
         anteriores = json.loads(marca.read_text(encoding="utf-8"))
@@ -185,10 +133,14 @@ def abrir(selo, texto):
         marca.write_text(json.dumps(posicoes), encoding="utf-8")
     cartas = []
     for ordem, (pergunta, posicao) in enumerate(zip(perguntas, posicoes), start=1):
-        cid, pt, en, numeral, elementos = CATALOGO[baralho[posicao - 1]]
-        cartas.append({"ordem": ordem, "pergunta": pergunta, "posicao": posicao, "id": cid,
-                       "nome": pt, "nome_en": en, "numeral_face": numeral, "elementos": elementos})
+        carta = catalogo[baralho[posicao - 1]]
+        cartas.append({"ordem": ordem, "pergunta": pergunta, "posicao": posicao, **carta})
     saida(0, selo=selo, verificado=True, cartas=cartas, registro_json=dados.decode("utf-8"))
+
+
+def verificar():
+    carregar_catalogo()
+    saida(0, catalogo="OK", cartas=78)
 
 
 def conferir():
@@ -205,8 +157,10 @@ def main():
         abrir(sys.argv[2], sys.argv[3])
     elif len(sys.argv) == 2 and sys.argv[1] == "conferir":
         conferir()
+    elif len(sys.argv) == 2 and sys.argv[1] == "verificar":
+        verificar()
     else:
-        saida(2, erro="uso", mensagem='Uso: selar < perguntas.json | abrir SELO "n1 n2 n3" | conferir < linha.txt')
+        saida(2, erro="uso", mensagem='Uso: verificar | selar < perguntas.json | abrir SELO "n1 n2 n3" | conferir < linha.txt')
 
 
 if __name__ == "__main__":
