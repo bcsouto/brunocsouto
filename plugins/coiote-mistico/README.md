@@ -10,12 +10,12 @@ O viajante traz três perguntas. O Claude embaralha as 78 cartas com fonte cript
 
 ## Como instalar
 
-No claude.ai, em Personalizar, Plugins, Adicionar, Adicionar marketplace, informe `bcsouto-hub/coiote-mistico` e instale o Coiote Místico.
+No claude.ai, em Personalizar, Plugins, Adicionar, Adicionar marketplace, informe `bcsouto/coiote-mistico` e instale o Coiote Místico.
 
 No Claude Code:
 
 ```bash
-claude plugin marketplace add bcsouto-hub/coiote-mistico
+claude plugin marketplace add bcsouto/coiote-mistico
 claude plugin install coiote-mistico@brunocsouto
 ```
 

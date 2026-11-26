@@ -10,12 +10,12 @@ Catálogo de plugins para o Claude (claude.ai, Cowork e Claude Code).
 
 ## Como adicionar
 
-No claude.ai: Personalizar, Plugins, Adicionar, Adicionar marketplace, e informe `bcsouto-hub/coiote-mistico`.
+No claude.ai: Personalizar, Plugins, Adicionar, Adicionar marketplace, e informe `bcsouto/coiote-mistico`.
 
 No Claude Code:
 
 ```bash
-claude plugin marketplace add bcsouto-hub/coiote-mistico
+claude plugin marketplace add bcsouto/coiote-mistico
 claude plugin install coiote-mistico@brunocsouto
 ```
 
