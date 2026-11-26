@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: r21-um-artigo-novo-conflita-com-norma
+expected_outcome: |
+  Comparar objeto, status, versão e período; não escolher só por data.

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: r25-compare-a-versao-2-deste-relatorio
+expected_outcome: |
+  IDs preservados; mudanças com motivo e evidência; uso de --previous quando houver executor.

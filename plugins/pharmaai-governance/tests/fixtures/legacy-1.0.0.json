@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0.0",
+  "titulo": "Exemplo fictício de auditoria documental",
+  "escopo": {
+    "finalidade": "Testar rastreabilidade de anúncio e resultado; dados inteiramente fictícios.",
+    "universo": "fechado",
+    "data_referencia": "2026-10-03",
+    "data_consulta": "2026-10-03T12:30:00-03:00",
+    "afirmacoes_solicitadas": [
+      "a1",
+      "a2"
+    ],
+    "limites": [
+      "Fonte fictícia fornecida; não é pesquisa empresarial nem confirmação atual."
+    ]
+  },
+  "fontes": [
+    {
+      "id": "f1",
+      "titulo": "Documento fictício de treinamento",
+      "autor": null,
+      "data_documento": null,
+      "localizacao": "documento:material-ficticio.txt",
+      "natureza": "comunicado",
+      "origem": "fornecida",
+      "acesso": "completo",
+      "consultada_em": "2026-10-03T12:00:00-03:00",
+      "temporalidade": "material_datado",
+      "sha256_texto": null
+    }
+  ],
+  "evidencias": [
+    {
+      "id": "e1",
+      "fonte_id": "f1",
+      "localizador": "Frase 2",
+      "trecho": "A parceria foi anunciada com valor potencial de até 100 milhões de unidades monetárias, condicionado a marcos futuros."
+    },
+    {
+      "id": "e2",
+      "fonte_id": "f1",
+      "localizador": "Frase 3",
+      "trecho": "Não foram divulgados resultados clínicos."
+    }
+  ],
+  "afirmacoes": [
+    {
+      "id": "a1",
+      "texto": "O documento anuncia valor potencial de até 100 milhões, condicionado a marcos futuros.",
+      "localizador": "Afirmação fictícia 1",
+      "estado": "SUSTENTADA",
+      "prioridade": "MATERIAL",
+      "camada": "FATO",
+      "verificacao_atual": false,
+      "evidencias": [
+        {
+          "evidencia_id": "e1",
+          "relacao": "APOIA"
+        }
+      ],
+      "justificativa": "O anúncio declara valor potencial e condicionantes, sem demonstrar pagamento realizado.",
+      "limitacoes": [
+        "Suporte documental a um anúncio fictício."
+      ]
+    },
+    {
+      "id": "a2",
+      "texto": "O documento divulga resultados clínicos.",
+      "localizador": "Afirmação fictícia 2",
+      "estado": "CONTRADITA",
+      "prioridade": "MATERIAL",
+      "camada": "FATO",
+      "verificacao_atual": false,
+      "evidencias": [
+        {
+          "evidencia_id": "e2",
+          "relacao": "CONTRADIZ"
+        }
+      ],
+      "justificativa": "A frase 3 nega a divulgação de resultados clínicos; isso não demonstra inexistência de resultados fora do documento.",
+      "limitacoes": [
+        "Conclusão restrita ao documento fictício fornecido."
+      ]
+    }
+  ],
+  "pendencias": [],
+  "cobertura": "integral"
+}

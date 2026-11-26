@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: r23-confira-as-afirmacoes-deste-comunicado-de
+expected_outcome: |
+  Matriz afirmação, estado, fonte/localizador, limite e ação; anúncio separado de resultado; compromisso financeiro separado de desembolso.

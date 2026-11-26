@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: r24-use-somente-estes-tres-pdfs-e
+expected_outcome: |
+  Universo fechado; JSON no contrato 1.1.0; validação executada ou declarada não executada; nenhuma verificacao_atual true.

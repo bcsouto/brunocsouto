@@ -1,0 +1,9 @@
+# Documentação oficial Anthropic consultada
+
+Consulta em 26 de novembro de 2026. Registro das regras que orientaram a conversão; não garante comportamento futuro de cada superfície.
+
+- [Plugin manifest reference](https://code.claude.com/docs/en/plugins/manifest-reference) (referência do manifesto): manifesto em `.claude-plugin/plugin.json`, demais componentes na raiz; `name` em kebab-case é o único campo obrigatório e prefixa todas as skills; campos de topo desconhecidos são descartados com aviso; `skills/` é varrido por padrão; caminhos declarados começam com `./`; `${CLAUDE_PLUGIN_ROOT}` muda a cada atualização e não deve guardar estado; plugins com diretório `bin/` não são instalados no Claude.ai nem no Cowork; `claude plugin validate` é a verificação autoritativa.
+- [Skills no Claude Code](https://code.claude.com/docs/en/skills): skills de plugin são invocadas como `/plugin:skill`; arquivos de apoio são referenciados por caminho relativo ao `SKILL.md`; descrição mais `when_to_use` é truncada em 1.536 caracteres na listagem; fora do Claude Code apenas `name`, `description`, `license`, `compatibility`, `metadata` e `allowed-tools` são aceitos no frontmatter.
+- [Skill authoring best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices) (boas práticas de autoria): `name` com até 64 caracteres em minúsculas, números e hífens, sem "anthropic" ou "claude"; `description` com até 1.024 caracteres, em terceira pessoa, dizendo o que faz e quando usar; corpo do `SKILL.md` abaixo de 500 linhas; referências a um nível de profundidade; barras normais em caminhos; ao menos três avaliações.
+
+Decorrências aplicadas: frontmatter restrito a `name` e `description` para funcionar em todas as superfícies; a antiga opção `allow_implicit_invocation: false` de `configurar-assessoria` virou restrição explícita na descrição, porque `disable-model-invocation` é aceito só no Claude Code; nenhum diretório `bin/`.

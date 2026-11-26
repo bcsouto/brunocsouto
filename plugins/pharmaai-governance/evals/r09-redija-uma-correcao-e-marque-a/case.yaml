@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: r09-redija-uma-correcao-e-marque-a
+expected_outcome: |
+  Separar minuta de implantação; só registrar execução se houver evidência/decisão.

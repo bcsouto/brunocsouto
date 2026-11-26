@@ -23,3 +23,20 @@ As ilustrações originais do baralho Rider-Waite-Smith, de Pamela Colman Smith
 (1909), não fazem parte deste plugin.
 
 SPDX-License-Identifier: MIT AND CC-BY-NC-ND-4.0
+
+--------------------------------------------------------------------
+
+PharmaAI Governance
+Copyright (c) 2026 Bruno Corrêa Souto · /in/brunocsouto
+
+1. Código: plugins/pharmaai-governance/skills/auditar-evidencias/scripts/validate_dossier.py,
+   plugins/pharmaai-governance/skills/auditar-evidencias/schemas/*.schema.json
+   e plugins/pharmaai-governance/tests/
+   Licença MIT. Texto integral em LICENSES/MIT.txt.
+
+2. Todo o restante de plugins/pharmaai-governance/
+   CC BY-NC-ND 4.0. Texto integral em LICENSES/CC-BY-NC-ND-4.0.txt.
+
+Detalhes em plugins/pharmaai-governance/LICENSE.
+
+SPDX-License-Identifier: MIT AND CC-BY-NC-ND-4.0
