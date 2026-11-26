@@ -1,7 +1,5 @@
 # Coiote Místico
 
-![Coiote Místico](assets/coiote-mistico.png)
-
 Consulta de tarô Rider-Waite-Smith conduzida pelo Coiote Místico, guardião das encruzilhadas e oráculo do deserto, em português do Brasil.
 
 ## O que faz
