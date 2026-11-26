@@ -63,7 +63,7 @@ O script `scripts/tiragem.py` faz o embaralhamento criptográfico, grava o regis
 
 ```bash
 mkdir -p /tmp/coiote-mistico
-H=519f90430294382d64f45aeb40e95bff6051e60b0658d8a1bb41eefc621e9239
+H=adeca039125577e7274759428c0073d9c4de31fdab0670a100e7882810220a30
 S="${CLAUDE_SKILL_DIR}/scripts/tiragem.py"
 echo "$H  $S" | sha256sum -c --status 2>/dev/null || S=$(find / -type f -path '*/consulta-oracular/scripts/tiragem.py' -exec sh -c 'echo "$0  $1" | sha256sum -c --status' "$H" {} \; -print -quit 2>/dev/null)
 D=$(dirname "$(dirname "$S")")
@@ -122,7 +122,8 @@ Regras de compilação:
 - **Prosa dirigida:** instruções em inglês, em frases descritivas que cobrem os blocos canônicos da base (estilo, assunto, cenário, composição) e a luz com fonte, qualidade e efeito. Diga para que a imagem serve. Nada de lista de palavras-chave nem de adjetivo vazio.
 - **Texto definido antes:** cada face leva exatamente as inscrições da edição de 1909, copiadas de `inscricao_topo` e `inscricao_base`, entre aspas, com a mesma grafia, inclusive o `of` minúsculo e a pontuação. Campo nulo significa que aquela faixa não tem texto: as cartas de 2 a 10 trazem só o numeral no alto e nenhum título embaixo; os Ases e as cartas da corte trazem só o título embaixo e nenhum numeral. Nunca traduza, complete nem invente uma inscrição.
 - **Letreiro de época:** o texto pertence à impressão. Descreva o numeral no alto da cena, logo abaixo do filete preto da moldura, e o título numa faixa creme estreita sob a cena, contornada por um filete preto fino, ambos à mão em capitulares romanas de traço levemente irregular, na mesma tinta preta dos contornos, com o grão do papel, a leve expansão da tinta e o desgaste da carta, para que se leia como impresso junto com a litografia e não aplicado depois. Peça o texto nítido e legível.
-- **Hiperespecificidade:** descreva cada face pelos objetos, gestos, cores e posições de `elementos`, com lateralidade explícita (left / right) quando a cena depender dela; não confie no nome da carta.
+- **Hiperespecificidade:** descreva cada face pelos objetos, gestos, cores e posições de `elementos`, conferidos nas digitalizações de 1909; não confie no nome da carta nem na memória da cena.
+- **Lateralidade:** em `elementos`, esquerda e direita são sempre de quem olha a carta. Traduza como "on the left of the card" e "on the right of the card", e use só os lados que o campo informa; não acrescente lado a um detalhe que o campo não posiciona. Inclua também a cor do céu ou do fundo quando o campo a trouxer.
 - **Escala e ordem:** três cartas inteiras, em pé, do mesmo tamanho, lado a lado, com espaçamento igual; esquerda, centro e direita seguem a ordem da escolha.
 - **Negativo semântico:** descreva em positivo o que se quer. Negativo explícito só onde a geração costuma errar: carta invertida ou girada, e texto inventado, como título nas cartas de 2 a 10 ou fonte digital. Em O Enforcado, diga que a carta está em pé e a figura, de cabeça para baixo dentro dela.
 - **Referências:** se o viajante anexar fotos das próprias cartas, associe cada anexo à carta pelo nome do arquivo ou pela ordem (no Pro, até 6 referências de objeto) e peça preservação de composição, cores e inscrições; para as demais, a iconografia clássica de Pamela Colman Smith.
@@ -140,7 +141,7 @@ Preencha este modelo em prosa contínua e entregue-o em um bloco `text`:
 ```text
 Create a horizontal 4:3 tarot reading board, a keepsake image of a three-card spread, showing exactly three Rider-Waite-Smith tarot cards standing upright side by side at identical size, evenly spaced and fully visible. The cards follow the classic iconography of Pamela Colman Smith: flat lithographic color in muted yellow, red, blue and ochre, with bold black ink outlines.
 
-The left card is <nome_en>: <hyper-specific description from elementos, with explicit left and right>. <frase do topo> <frase da base>
+The left card is <nome_en>: <hyper-specific description from elementos, keeping only the left and right it gives>. <frase do topo> <frase da base>
 
 The center card is <same structure>.
 

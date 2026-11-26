@@ -6,7 +6,7 @@
     "numeral_face": "0",
     "inscricao_topo": "0",
     "inscricao_base": "THE FOOL.",
-    "elementos": "Viajante à beira do precipício, rosa branca e cão."
+    "elementos": "Jovem de túnica escura estampada com flores, botas amarelas e pena vermelha no gorro caminha para a esquerda à beira do precipício, olhando para o alto à direita. O bastão apoiado no ombro leva uma trouxa no alto à direita; a outra mão ergue uma rosa branca. Sol branco no canto superior direito, céu amarelo, cão branco saltando à direita e montanhas nevadas ao fundo."
   },
   {
     "id": 1,
@@ -15,7 +15,7 @@
     "numeral_face": "I",
     "inscricao_topo": "I",
     "inscricao_base": "THE MAGICIAN.",
-    "elementos": "Bastão erguido, símbolo do infinito e quatro emblemas sobre a mesa."
+    "elementos": "Figura de túnica branca e manto vermelho ergue, à esquerda, uma vara branca para o céu e aponta a outra mão para o chão, à direita. Símbolo do infinito sobre a cabeça. Mesa à esquerda com taça, pentáculo, espada e bastão; arco de rosas vermelhas no alto e rosas com lírios brancos embaixo; fundo amarelo."
   },
   {
     "id": 2,
@@ -24,7 +24,7 @@
     "numeral_face": "II",
     "inscricao_topo": "II",
     "inscricao_base": "THE HIGH PRIESTESS",
-    "elementos": "Pilares B e J, véu com romãs e rolo parcialmente coberto."
+    "elementos": "Mulher de manto azul sentada entre o pilar negro com a letra B, à esquerda, e o pilar branco com a letra J, à direita. Coroa de chifres com disco, cruz branca no peito, rolo com a palavra TORA no colo e lua crescente amarela junto aos pés, à direita. Véu estampado com romãs atrás dela."
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "numeral_face": "III",
     "inscricao_topo": "III",
     "inscricao_base": "THE EMPRESS.",
-    "elementos": "Trigo, coroa de estrelas e escudo com o símbolo de Vênus."
+    "elementos": "Mulher coroada com doze estrelas, sentada sobre almofadas vermelhas, à esquerda, em vestido branco estampado com romãs. Ergue um cetro com globo à esquerda. Escudo em forma de coração com o símbolo de Vênus embaixo, à esquerda; trigo dourado à frente; bosque de ciprestes e cascata à direita; céu amarelo."
   },
   {
     "id": 4,
@@ -42,7 +42,7 @@
     "numeral_face": "IV",
     "inscricao_topo": "IV",
     "inscricao_base": "THE EMPEROR.",
-    "elementos": "Trono com cabeças de carneiro e montanhas."
+    "elementos": "Imperador de barba branca, coroa dourada e manto vermelho sobre armadura, sentado de frente num trono de pedra cinza com cabeças de carneiro. Segura um cetro em forma de ankh à esquerda e um orbe dourado à direita. Fundo laranja e montanhas áridas."
   },
   {
     "id": 5,
@@ -51,7 +51,7 @@
     "numeral_face": "V",
     "inscricao_topo": "V",
     "inscricao_base": "THE HIEROPHANT.",
-    "elementos": "Tiara, dois acólitos e chaves cruzadas."
+    "elementos": "Sacerdote de vestes vermelhas e tiara tripla, sentado de frente entre dois pilares cinzentos. A mão erguida em bênção fica à esquerda e o báculo de cruz tripla, à direita. Duas chaves cruzadas aos pés e dois acólitos tonsurados de costas, em primeiro plano."
   },
   {
     "id": 6,
@@ -60,7 +60,7 @@
     "numeral_face": "VI",
     "inscricao_topo": "VI",
     "inscricao_base": "THE LOVERS.",
-    "elementos": "Duas figuras sob um anjo e uma serpente em uma das árvores."
+    "elementos": "Anjo de asas vermelhas e manto roxo surge de uma nuvem sob um sol amarelo e estende os braços sobre um casal nu. A mulher fica à esquerda, diante de uma árvore com frutos e uma serpente enroscada; o homem fica à direita, diante de uma árvore com chamas. Montanha vermelha ao centro, ao fundo."
   },
   {
     "id": 7,
@@ -69,7 +69,7 @@
     "numeral_face": "VII",
     "inscricao_topo": "VII",
     "inscricao_base": "THE CHARIOT.",
-    "elementos": "Condutor sob dossel estrelado, com uma esfinge clara e outra escura."
+    "elementos": "Condutor de armadura, com luas crescentes nos ombros, de pé num carro de pedra sob dossel azul estrelado, com um cetro na mão à esquerda e sem rédeas. Esfinge negra à esquerda e esfinge branca à direita, diante do carro com disco alado. Muralhas e torres ao fundo; céu amarelo."
   },
   {
     "id": 8,
@@ -78,7 +78,7 @@
     "numeral_face": "VIII",
     "inscricao_topo": "VIII",
     "inscricao_base": "STRENGTH.",
-    "elementos": "Mulher junto à boca de um leão, com o símbolo do infinito acima da cabeça."
+    "elementos": "Mulher de vestido branco, com coroa e cinto de flores, à esquerda, inclina-se sobre um leão laranja à direita e segura com as mãos a boca dele. Símbolo do infinito sobre a cabeça dela. Céu amarelo, chão verde e montanha azul ao longe, à esquerda."
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "numeral_face": "IX",
     "inscricao_topo": "IX",
     "inscricao_base": "THE HERMIT.",
-    "elementos": "Figura encapuzada com cajado e estrela dentro da lanterna."
+    "elementos": "Ancião de manto e capuz cinzentos, de pé no alto nevado, voltado para a esquerda. Ergue à esquerda uma lanterna com uma estrela de seis pontas dentro e apoia na outra mão um cajado amarelo. Céu azul acinzentado."
   },
   {
     "id": 10,
@@ -96,7 +96,7 @@
     "numeral_face": "X",
     "inscricao_topo": "X",
     "inscricao_base": "WHEEL of FORTUNE.",
-    "elementos": "Roda inscrita, esfinge acima e quatro figuras aladas nos cantos."
+    "elementos": "Grande roda laranja no centro, com as letras T A R O e símbolos alquímicos. Esfinge azul com espada no topo, serpente amarela descendo pela esquerda e figura vermelha com cabeça de chacal subindo pela direita. Anjo no alto à esquerda, águia no alto à direita, touro embaixo à esquerda e leão embaixo à direita, todos alados e com livros, entre nuvens num céu azul."
   },
   {
     "id": 11,
@@ -105,7 +105,7 @@
     "numeral_face": "XI",
     "inscricao_topo": "XI",
     "inscricao_base": "JUSTICE.",
-    "elementos": "Figura entre pilares, com balança e espada erguida."
+    "elementos": "Figura coroada, de manto vermelho e capa verde, sentada de frente entre dois pilares cinzentos diante de uma cortina roxa. Ergue a espada na vertical à esquerda e segura a balança à direita. Um pé branco aparece sob a veste; fundo amarelo atrás da cortina."
   },
   {
     "id": 12,
@@ -114,7 +114,7 @@
     "numeral_face": "XII",
     "inscricao_topo": "XII",
     "inscricao_base": "THE HANGED MAN.",
-    "elementos": "Figura suspensa por um pé, com a outra perna dobrada e uma auréola."
+    "elementos": "Homem pendurado de cabeça para baixo por um pé numa forca de madeira viva em forma de T, com folhas verdes. A outra perna, de meia vermelha, dobra-se atrás formando um quatro; as mãos ficam atrás das costas; túnica azul e auréola dourada em volta da cabeça, embaixo. Fundo cinza claro."
   },
   {
     "id": 13,
@@ -123,7 +123,7 @@
     "numeral_face": "XIII",
     "inscricao_topo": "XIII",
     "inscricao_base": "DEATH.",
-    "elementos": "Esqueleto em armadura, cavalo branco e estandarte escuro com rosa branca."
+    "elementos": "Esqueleto de armadura negra monta um cavalo branco que avança para a direita e segura à esquerda um estandarte negro com uma rosa branca. Rei caído no chão à esquerda; bispo de amarelo de mãos postas à direita, com uma criança e uma moça. Rio com barco ao fundo e sol nascendo entre duas torres, à direita."
   },
   {
     "id": 14,
@@ -132,7 +132,7 @@
     "numeral_face": "XIV",
     "inscricao_topo": "XIV",
     "inscricao_base": "TEMPERANCE.",
-    "elementos": "Anjo verte líquido entre duas taças, com um pé na água e outro em terra."
+    "elementos": "Anjo de túnica branca, asas vermelhas e triângulo dentro de um quadrado no peito verte água de uma taça dourada para outra. Um pé está na água e o outro na margem. Íris amarelas à direita; à esquerda, um caminho sobe até um sol entre montanhas."
   },
   {
     "id": 15,
@@ -141,7 +141,7 @@
     "numeral_face": "XV",
     "inscricao_topo": "XV",
     "inscricao_base": "THE DEVIL.",
-    "elementos": "Figura alada sobre pedestal e duas figuras humanas acorrentadas."
+    "elementos": "Figura com chifres de carneiro, asas de morcego e pentagrama invertido na testa, sentada num pedestal negro. A mão erguida fica à esquerda e a tocha apontada para baixo, à direita. Mulher nua com cauda de uvas à esquerda e homem nu com cauda de fogo à direita, presos ao pedestal por correntes frouxas; fundo negro."
   },
   {
     "id": 16,
@@ -150,7 +150,7 @@
     "numeral_face": "XVI",
     "inscricao_topo": "XVI",
     "inscricao_base": "THE TOWER.",
-    "elementos": "Raio, coroa deslocada e figuras em queda."
+    "elementos": "Torre cinzenta sobre um rochedo, atingida no alto por um raio amarelo vindo da direita. A coroa amarela voa para a esquerda; chamas saem das janelas. Duas figuras caem de cabeça para baixo, uma de cada lado, entre gotas de fogo amarelo, contra um céu negro com nuvens cinzentas."
   },
   {
     "id": 17,
@@ -159,7 +159,7 @@
     "numeral_face": "XVII",
     "inscricao_topo": "XVII",
     "inscricao_base": "THE STAR.",
-    "elementos": "Uma estrela grande, sete menores e água vertida de dois jarros."
+    "elementos": "Mulher nua ajoelhada, com um pé sobre a água do lago à esquerda e um joelho na terra à direita, verte dois jarros: um no lago e outro na terra. Grande estrela amarela de oito pontas no alto e sete estrelas brancas menores em volta. Céu azul claro, pássaro numa árvore à direita e colinas ao fundo."
   },
   {
     "id": 18,
@@ -168,7 +168,7 @@
     "numeral_face": "XVIII",
     "inscricao_topo": "XVIII",
     "inscricao_base": "THE MOON.",
-    "elementos": "Cão, lobo e crustáceo que emerge da água, com duas torres ao fundo."
+    "elementos": "Lua amarela com rosto de perfil dentro de um disco radiante, derramando gotas amarelas. Torre cinzenta à esquerda e outra à direita; cão claro à esquerda e lobo à direita uivam para ela. Lagostim saindo de uma poça embaixo e caminho sinuoso rumo às montanhas; céu azul."
   },
   {
     "id": 19,
@@ -177,7 +177,7 @@
     "numeral_face": "XIX",
     "inscricao_topo": "XIX",
     "inscricao_base": "THE SUN.",
-    "elementos": "Criança em cavalo branco, estandarte vermelho e girassóis."
+    "elementos": "Sol grande com rosto no alto, raios retos e ondulados, céu azul claro. Criança nua com coroa de flores e pena vermelha monta um cavalo branco de braços abertos. Grande estandarte laranja à direita e girassóis sobre um muro cinza ao fundo."
   },
   {
     "id": 20,
@@ -186,7 +186,7 @@
     "numeral_face": "XX",
     "inscricao_topo": "XX",
     "inscricao_base": "JUDGEMENT.",
-    "elementos": "Anjo com trombeta e figuras que se erguem de caixões."
+    "elementos": "Anjo de cabelos dourados e asas vermelhas surge de nuvens cinzentas e toca uma trombeta com bandeira branca e cruz vermelha. Embaixo, figuras cinzentas erguem-se de caixões que flutuam na água: um homem de costas à esquerda, uma criança ao centro e uma mulher à direita. Montanhas nevadas ao fundo."
   },
   {
     "id": 21,
@@ -195,7 +195,7 @@
     "numeral_face": "XXI",
     "inscricao_topo": "XXI",
     "inscricao_base": "THE WORLD.",
-    "elementos": "Figura dançante dentro de uma grinalda, com quatro figuras nos cantos."
+    "elementos": "Figura nua envolta numa faixa roxa dança dentro de uma grinalda oval de louros verdes amarrada com fitas vermelhas, com uma pequena vara em cada mão. Anjo no alto à esquerda, águia no alto à direita, touro embaixo à esquerda e leão embaixo à direita. Céu azul claro."
   },
   {
     "id": 22,
@@ -204,7 +204,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "ACE of WANDS.",
-    "elementos": "Mão saindo da nuvem segura um bastão com brotos."
+    "elementos": "Mão saindo de uma nuvem cinzenta à direita segura na vertical um bastão de madeira com brotos verdes; algumas folhas caem soltas. Embaixo, paisagem verde com rio, árvores e um castelo numa colina à esquerda. Fundo creme."
   },
   {
     "id": 23,
@@ -213,7 +213,7 @@
     "numeral_face": null,
     "inscricao_topo": "II",
     "inscricao_base": null,
-    "elementos": "Figura com globo entre dois bastões, no alto de uma muralha."
+    "elementos": "Homem de gorro e manto vermelhos, de pé no alto de uma muralha, segura um globo à esquerda e um bastão à direita; outro bastão está preso ao muro à esquerda. Escudo com rosas e lírios cruzados no muro, embaixo à esquerda. Mar e campos ao fundo; céu cinza."
   },
   {
     "id": 24,
@@ -222,7 +222,7 @@
     "numeral_face": null,
     "inscricao_topo": "III",
     "inscricao_base": null,
-    "elementos": "Figura de costas entre três bastões, olhando embarcações ao longe."
+    "elementos": "Figura de costas, de manto vermelho e capa verde, no alto de um penhasco, segura um bastão à direita e olha o mar dourado. Um bastão à esquerda e outro à direita fincados no chão. Céu amarelo."
   },
   {
     "id": 25,
@@ -231,7 +231,7 @@
     "numeral_face": null,
     "inscricao_topo": "IV",
     "inscricao_base": null,
-    "elementos": "Guirlanda suspensa nos quatro bastões e figuras em celebração."
+    "elementos": "Quatro bastões altos sustentam no alto uma guirlanda de flores e frutos. Ao fundo, duas mulheres erguem buquês diante de um castelo, com uma ponte à direita. Céu amarelo."
   },
   {
     "id": 26,
@@ -240,7 +240,7 @@
     "numeral_face": null,
     "inscricao_topo": "V",
     "inscricao_base": null,
-    "elementos": "Cinco jovens erguem bastões que se cruzam."
+    "elementos": "Cinco jovens de túnicas de cores diferentes erguem e cruzam bastões longos, num terreno irregular. Céu azul claro."
   },
   {
     "id": 27,
@@ -249,7 +249,7 @@
     "numeral_face": null,
     "inscricao_topo": "VI",
     "inscricao_base": null,
-    "elementos": "Figura a cavalo com coroa de louros e outra coroa no bastão."
+    "elementos": "Cavaleiro com coroa de louros e manto vermelho monta um cavalo branco que segue para a direita. No bastão dele há outra coroa de louros amarrada com fita vermelha; homens a pé à esquerda erguem mais cinco bastões. Céu azul."
   },
   {
     "id": 28,
@@ -258,7 +258,7 @@
     "numeral_face": null,
     "inscricao_topo": "VII",
     "inscricao_base": null,
-    "elementos": "Figura em terreno elevado empunha um bastão diante de seis que sobem."
+    "elementos": "Jovem de túnica verde, com uma bota e um sapato, no alto de um terreno, segura em diagonal um bastão com as duas mãos e olha para a esquerda. Seis bastões erguem-se de baixo contra ele. Céu azul."
   },
   {
     "id": 29,
@@ -267,7 +267,7 @@
     "numeral_face": null,
     "inscricao_topo": "VIII",
     "inscricao_base": null,
-    "elementos": "Oito bastões cruzam o céu em diagonal."
+    "elementos": "Oito bastões paralelos atravessam o céu em diagonal, do alto à esquerda para baixo à direita. Embaixo, paisagem verde com rio e uma casa numa colina; céu azul."
   },
   {
     "id": 30,
@@ -276,7 +276,7 @@
     "numeral_face": null,
     "inscricao_topo": "IX",
     "inscricao_base": null,
-    "elementos": "Figura com a cabeça enfaixada, um bastão na mão e oito atrás."
+    "elementos": "Homem com faixa branca na cabeça, no centro, agarra um bastão e olha desconfiado para a esquerda. Oito bastões enfileirados atrás dele como uma paliçada; colinas verdes e céu azul."
   },
   {
     "id": 31,
@@ -285,7 +285,7 @@
     "numeral_face": null,
     "inscricao_topo": "X",
     "inscricao_base": null,
-    "elementos": "Figura curvada carrega dez bastões em direção às construções."
+    "elementos": "Homem curvado, visto de costas, carrega nos braços um feixe de dez bastões e caminha para a direita, rumo a uma casa ao longe. Céu azul."
   },
   {
     "id": 32,
@@ -294,7 +294,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "PAGE of WANDS.",
-    "elementos": "Jovem contempla um bastão erguido em paisagem árida."
+    "elementos": "Jovem de perfil, voltado para a direita, de túnica amarela com salamandras pretas, capa verde e chapéu com pena, segura um bastão alto à direita. Deserto com três pirâmides à direita; céu azul."
   },
   {
     "id": 33,
@@ -303,7 +303,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "KNIGHT of WANDS.",
-    "elementos": "Cavaleiro com bastão sobre cavalo que ergue as patas dianteiras."
+    "elementos": "Cavaleiro de armadura, com túnica amarela de salamandras e plumas vermelhas no elmo, ergue o bastão sobre um cavalo castanho empinado, voltado para a esquerda. Pirâmides no deserto à esquerda; céu azul."
   },
   {
     "id": 34,
@@ -312,7 +312,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "QUEEN of WANDS.",
-    "elementos": "Girassol na mão e gato preto aos pés."
+    "elementos": "Rainha de vestido amarelo, sentada de frente num trono com leões, segura um bastão à esquerda e um girassol à direita. Gato preto aos pés, no centro; tapeçaria com leões e girassóis atrás; deserto ao fundo."
   },
   {
     "id": 35,
@@ -321,7 +321,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "KING of WANDS",
-    "elementos": "Bastão, motivos de salamandra e uma salamandra junto ao trono."
+    "elementos": "Rei de manto vermelho e capa verde, sentado e voltado para a esquerda, segura um bastão florido à esquerda. Encosto do trono com leões e salamandras à direita e uma pequena salamandra no chão, à direita. Céu azul."
   },
   {
     "id": 36,
@@ -330,7 +330,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "ACE of CUPS.",
-    "elementos": "Mão sustenta um cálice transbordante sob uma pomba."
+    "elementos": "Mão saindo de uma nuvem à direita sustenta uma taça dourada marcada com um W, da qual caem cinco jorros e muitas gotas num lago de nenúfares. Pomba branca desce do alto com uma hóstia marcada por uma cruz. Fundo cinza claro."
   },
   {
     "id": 37,
@@ -339,7 +339,7 @@
     "numeral_face": null,
     "inscricao_topo": "II",
     "inscricao_base": null,
-    "elementos": "Duas taças erguidas sob um caduceu e uma cabeça de leão alada."
+    "elementos": "Moça de branco e azul, à esquerda, e rapaz de túnica estampada, à direita, trocam taças. Acima deles, um caduceu encimado por uma cabeça de leão vermelha alada. Casa numa colina ao fundo; céu azul."
   },
   {
     "id": 38,
@@ -348,7 +348,7 @@
     "numeral_face": null,
     "inscricao_topo": "III",
     "inscricao_base": null,
-    "elementos": "Três figuras erguem taças sobre um chão com frutos da colheita."
+    "elementos": "Três mulheres dançam em roda erguendo taças: uma de branco à esquerda, uma de manto vermelho de costas ao centro e uma de amarelo claro à direita. Abóbora, uvas e frutos no chão; céu azul."
   },
   {
     "id": 39,
@@ -357,7 +357,7 @@
     "numeral_face": null,
     "inscricao_topo": "IV",
     "inscricao_base": null,
-    "elementos": "Figura junto à árvore, três taças no chão e uma quarta oferecida pela nuvem."
+    "elementos": "Jovem sentado sob uma árvore, de braços e pernas cruzados, olha as três taças à sua frente no chão. À esquerda, uma mão saindo de uma nuvem oferece a quarta taça. Colina verde e céu azul."
   },
   {
     "id": 40,
@@ -366,7 +366,7 @@
     "numeral_face": null,
     "inscricao_topo": "V",
     "inscricao_base": null,
-    "elementos": "Figura de capa escura, três taças tombadas e duas de pé."
+    "elementos": "Figura de manto negro, de cabeça baixa, voltada para a esquerda, olha três taças tombadas à esquerda; duas taças de pé ficam atrás dela, à direita. Rio com ponte à direita e castelo à esquerda, ao fundo; céu cinza."
   },
   {
     "id": 41,
@@ -375,7 +375,7 @@
     "numeral_face": null,
     "inscricao_topo": "VI",
     "inscricao_base": null,
-    "elementos": "Figura jovem oferece a outra uma taça com flores brancas."
+    "elementos": "Menino de capuz vermelho e túnica azul, à esquerda, oferece uma taça com flores brancas a uma menina menor, à direita. Seis taças com flores brancas; pedestal de pedra com escudo marcado por um X à esquerda. Casas antigas e torre ao fundo, um guarda se afastando à esquerda; céu azul."
   },
   {
     "id": 42,
@@ -384,7 +384,7 @@
     "numeral_face": null,
     "inscricao_topo": "VII",
     "inscricao_base": null,
-    "elementos": "Silhueta diante de sete taças sobre nuvens, cada qual com uma visão."
+    "elementos": "Silhueta escura vista de costas, embaixo à esquerda, ergue a mão diante de sete taças sobre nuvens cinzentas. Na fileira de cima, uma cabeça à esquerda, uma figura velada luminosa ao centro e uma serpente à direita; na de baixo, um castelo, joias, uma coroa de louros e um dragão, da esquerda para a direita. Fundo azul."
   },
   {
     "id": 43,
@@ -393,7 +393,7 @@
     "numeral_face": null,
     "inscricao_topo": "VIII",
     "inscricao_base": null,
-    "elementos": "Figura se afasta das oito taças sob a lua."
+    "elementos": "Figura de manto vermelho, com cajado, vista de costas, afasta-se rumo às montanhas rochosas à direita. Oito taças empilhadas em primeiro plano, cinco embaixo e três em cima, com um vão. Lua com rosto no alto à esquerda; céu azul."
   },
   {
     "id": 44,
@@ -402,7 +402,7 @@
     "numeral_face": null,
     "inscricao_topo": "IX",
     "inscricao_base": null,
-    "elementos": "Figura sentada de braços cruzados, com nove taças atrás."
+    "elementos": "Homem corpulento de chapéu vermelho e túnica branca, sentado no centro num banco de madeira, de braços cruzados e satisfeito. Atrás dele, nove taças sobre uma prateleira curva coberta por pano azul. Fundo amarelo."
   },
   {
     "id": 45,
@@ -411,7 +411,7 @@
     "numeral_face": null,
     "inscricao_topo": "X",
     "inscricao_base": null,
-    "elementos": "Dez taças em um arco-íris sobre uma família."
+    "elementos": "Arco-íris com dez taças no alto. Casal abraçado, de costas, ergue os braços à esquerda do centro; duas crianças dançam à direita. Casa numa colina, rio e árvores ao fundo; céu azul."
   },
   {
     "id": 46,
@@ -420,7 +420,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "PAGE of CUPS.",
-    "elementos": "Jovem olha para o peixe que emerge da taça."
+    "elementos": "Jovem de túnica azul estampada com lírios, turbante azul e meias rosadas, de pé e voltado para a esquerda, segura à esquerda uma taça da qual sai um peixe e apoia a outra mão na cintura. Mar ondulado atrás; céu cinza claro."
   },
   {
     "id": 47,
@@ -429,7 +429,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "KNIGHT of CUPS.",
-    "elementos": "Cavaleiro estende uma taça sobre um cavalo claro."
+    "elementos": "Cavaleiro de armadura com elmo alado monta um cavalo branco que caminha para a direita e estende uma taça dourada. Riacho e montanhas à direita; céu azul."
   },
   {
     "id": 48,
@@ -438,7 +438,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "QUEEN of CUPS.",
-    "elementos": "Rainha à beira da água contempla um cálice fechado e ornamentado."
+    "elementos": "Rainha de vestido branco e manto azulado, sentada de perfil e voltada para a esquerda num trono à beira da água, contempla uma taça dourada fechada, com alças em forma de anjos, segura com as duas mãos. Trono com querubins e criança-peixe entalhada embaixo, à direita; seixos e água embaixo; céu azul."
   },
   {
     "id": 49,
@@ -447,7 +447,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "KING of CUPS.",
-    "elementos": "Rei com taça e cetro em um trono cercado pelo mar."
+    "elementos": "Rei de manto azul e capa verde e amarela, sentado de frente num trono de pedra sobre o mar, segura uma taça à esquerda e um cetro curto à direita. Amuleto de peixe no peito; peixe saltando à esquerda e barco à direita; céu cinza."
   },
   {
     "id": 50,
@@ -456,7 +456,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "ACE of SWORDS.",
-    "elementos": "Mão na nuvem ergue uma espada cuja ponta passa por uma coroa."
+    "elementos": "Mão saindo de uma nuvem à esquerda ergue na vertical uma espada cuja ponta atravessa uma coroa dourada, com ramo de oliveira à esquerda e folha de palmeira à direita. Seis gotas amarelas caem; montanhas cinzentas embaixo; fundo cinza claro."
   },
   {
     "id": 51,
@@ -465,7 +465,7 @@
     "numeral_face": null,
     "inscricao_topo": "II",
     "inscricao_base": null,
-    "elementos": "Figura vendada, espadas cruzadas e lua crescente sobre o mar."
+    "elementos": "Mulher vendada, de túnica branca, sentada num banco de pedra, cruza os braços sobre o peito e apoia nos ombros duas espadas longas, erguidas em V. Mar com rochedos atrás e lua crescente no alto à direita; céu azul acinzentado."
   },
   {
     "id": 52,
@@ -474,7 +474,7 @@
     "numeral_face": null,
     "inscricao_topo": "III",
     "inscricao_base": null,
-    "elementos": "Três espadas atravessam um coração sob a chuva."
+    "elementos": "Grande coração vermelho atravessado por três espadas, sob nuvens cinzentas e chuva. Fundo cinza."
   },
   {
     "id": 53,
@@ -483,7 +483,7 @@
     "numeral_face": null,
     "inscricao_topo": "IV",
     "inscricao_base": null,
-    "elementos": "Efígie deitada, três espadas na parede e uma junto ao túmulo."
+    "elementos": "Efígie de cavaleiro deitada sobre um túmulo, de mãos postas, com a cabeça à direita. Três espadas penduradas na parede acima, com a ponta para baixo, e uma quarta entalhada na lateral do túmulo. Vitral colorido no alto à esquerda."
   },
   {
     "id": 54,
@@ -492,7 +492,7 @@
     "numeral_face": null,
     "inscricao_topo": "V",
     "inscricao_base": null,
-    "elementos": "Figura recolhe espadas enquanto outras duas se afastam."
+    "elementos": "Jovem de verde e vermelho, à direita, sorri com desdém, com duas espadas no ombro e uma terceira apontada para o chão. Duas espadas caídas no chão; duas figuras abatidas se afastam à esquerda, rumo ao mar. Nuvens rasgadas num céu azul."
   },
   {
     "id": 55,
@@ -501,7 +501,7 @@
     "numeral_face": null,
     "inscricao_topo": "VI",
     "inscricao_base": null,
-    "elementos": "Barco com passageiros e seis espadas fincadas."
+    "elementos": "Barqueiro visto de costas, de pé na popa à esquerda, empurra o barco com uma vara longa e escura. À direita, uma mulher encapuzada de manto amarelo e uma criança sentadas; seis espadas fincadas de pé na parte direita do barco. Água encrespada perto do barco, embaixo à direita, e lisa ao longe, até uma margem com árvores; céu cinza."
   },
   {
     "id": 56,
@@ -510,7 +510,7 @@
     "numeral_face": null,
     "inscricao_topo": "VII",
     "inscricao_base": null,
-    "elementos": "Figura leva cinco espadas e deixa duas junto ao acampamento."
+    "elementos": "Homem de gorro vermelho caminha na ponta dos pés para a esquerda, olhando para trás, à direita, com cinco espadas nos braços. Duas espadas ficam fincadas no chão à direita, junto às tendas de um acampamento. Céu amarelo."
   },
   {
     "id": 57,
@@ -519,7 +519,7 @@
     "numeral_face": null,
     "inscricao_topo": "VIII",
     "inscricao_base": null,
-    "elementos": "Figura vendada e amarrada, cercada por oito espadas."
+    "elementos": "Mulher de vestido vermelho, vendada e com o tronco amarrado por faixas brancas, de pé no centro, sobre chão com poças. Oito espadas fincadas em volta, três à esquerda e cinco à direita, com a frente aberta. Castelo num penhasco à direita; céu cinza."
   },
   {
     "id": 58,
@@ -528,7 +528,7 @@
     "numeral_face": null,
     "inscricao_topo": "IX",
     "inscricao_base": null,
-    "elementos": "Figura sentada na cama com o rosto entre as mãos, sob nove espadas."
+    "elementos": "Figura sentada na cama, no escuro, cobre o rosto com as duas mãos. Nove espadas horizontais na parede negra, à esquerda; colcha com rosas e símbolos astrológicos; cama entalhada com uma cena de combate."
   },
   {
     "id": 59,
@@ -537,7 +537,7 @@
     "numeral_face": null,
     "inscricao_topo": "X",
     "inscricao_base": null,
-    "elementos": "Figura caída com dez espadas nas costas e uma faixa clara no horizonte."
+    "elementos": "Figura caída de bruços, embaixo, sob um pano vermelho, com dez espadas cravadas nas costas. Céu negro com faixa amarela de amanhecer no horizonte, água calma e montanhas escuras."
   },
   {
     "id": 60,
@@ -546,7 +546,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "PAGE of SWORDS.",
-    "elementos": "Jovem sustenta a espada com as duas mãos em colina ventosa."
+    "elementos": "Jovem de túnica rosada, meias amarelas e botas vermelhas, de pé num terreno irregular, ergue uma espada com as duas mãos. Nuvens agitadas pelo vento e pássaros no céu azul."
   },
   {
     "id": 61,
@@ -555,7 +555,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "KNIGHT of SWORDS.",
-    "elementos": "Cavaleiro com espada erguida sobre cavalo em disparada."
+    "elementos": "Cavaleiro de armadura com capa vermelha esvoaçante avança a galope para a esquerda num cavalo branco, com a espada erguida. Árvores vergadas pelo vento e nuvens rasgadas; céu azul."
   },
   {
     "id": 62,
@@ -564,7 +564,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "QUEEN of SWORDS.",
-    "elementos": "Rainha com espada vertical e a mão livre estendida."
+    "elementos": "Rainha de perfil, voltada para a direita, num trono entalhado com borboletas e cabeça de querubim, ergue a espada na vertical e estende, mais à direita, a mão aberta. Nuvens abaixo e um pássaro solitário no alto; céu azul."
   },
   {
     "id": 63,
@@ -573,7 +573,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "KING of SWORDS.",
-    "elementos": "Rei sentado de frente, com espada erguida."
+    "elementos": "Rei de manto azul e capa roxa, sentado de frente, ergue à esquerda uma espada um pouco inclinada. Encosto do trono com borboletas e luas crescentes; árvores e dois pássaros; céu azul."
   },
   {
     "id": 64,
@@ -582,7 +582,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "ACE of PENTACLES.",
-    "elementos": "Mão apresenta um pentáculo sobre um jardim com arco vegetal."
+    "elementos": "Mão saindo de uma nuvem à esquerda oferece na palma um grande pentáculo dourado. Embaixo, jardim de lírios brancos e arco de sebe verde que se abre para um caminho até montanhas azuis, à direita. Fundo cinza claro."
   },
   {
     "id": 65,
@@ -591,7 +591,7 @@
     "numeral_face": null,
     "inscricao_topo": "II",
     "inscricao_base": null,
-    "elementos": "Dois pentáculos ligados por uma alça em forma de infinito, com barcos ao fundo."
+    "elementos": "Jovem de chapéu vermelho alto e túnica laranja dança equilibrando dois pentáculos unidos por uma faixa verde em forma de infinito, um mais alto à esquerda e outro mais baixo à direita. Dois navios sobre ondas altas ao fundo; céu azul claro."
   },
   {
     "id": 66,
@@ -600,7 +600,7 @@
     "numeral_face": null,
     "inscricao_topo": "III",
     "inscricao_base": null,
-    "elementos": "Artesão e duas figuras sob um arco de pedra com três pentáculos."
+    "elementos": "Pedreiro de pé num banco de madeira, à esquerda, trabalha num arco gótico de pedra com três pentáculos entalhados no alto. À direita, um monge e uma figura de capa estampada seguram a planta da obra. Pedra cinza."
   },
   {
     "id": 67,
@@ -609,7 +609,7 @@
     "numeral_face": null,
     "inscricao_topo": "IV",
     "inscricao_base": null,
-    "elementos": "Um pentáculo junto ao peito, um sobre a coroa e dois sob os pés."
+    "elementos": "Homem coroado, sentado de frente num bloco de pedra, agarra um pentáculo junto ao peito, equilibra outro sobre a coroa e apoia um pé sobre cada um dos dois restantes. Cidade ao fundo; céu cinza."
   },
   {
     "id": 68,
@@ -618,7 +618,7 @@
     "numeral_face": null,
     "inscricao_topo": "V",
     "inscricao_base": null,
-    "elementos": "Duas figuras passam pela neve diante de um vitral iluminado."
+    "elementos": "Dois mendigos maltrapilhos caminham na neve para a esquerda: um de muletas à esquerda e uma mulher envolta num xale à direita. Acima, um vitral iluminado com cinco pentáculos. Noite negra com neve caindo."
   },
   {
     "id": 69,
@@ -627,7 +627,7 @@
     "numeral_face": null,
     "inscricao_topo": "VI",
     "inscricao_base": null,
-    "elementos": "Figura com balança distribui moedas a uma pessoa ajoelhada."
+    "elementos": "Mercador de manto vermelho, no centro, segura uma balança à direita e deposita moedas com a outra mão num mendigo ajoelhado à esquerda; outro mendigo ajoelha-se à direita. Seis pentáculos no alto; cidade ao fundo à direita; fundo creme."
   },
   {
     "id": 70,
@@ -636,7 +636,7 @@
     "numeral_face": null,
     "inscricao_topo": "VII",
     "inscricao_base": null,
-    "elementos": "Pessoa apoiada em uma ferramenta contempla a planta com pentáculos."
+    "elementos": "Lavrador jovem apoiado no cabo de uma enxada, à direita, contempla um arbusto verde à esquerda com seis pentáculos; o sétimo está a seus pés, à direita. Céu cinza."
   },
   {
     "id": 71,
@@ -645,7 +645,7 @@
     "numeral_face": null,
     "inscricao_topo": "VIII",
     "inscricao_base": null,
-    "elementos": "Artesão grava um pentáculo, com outros expostos ao lado."
+    "elementos": "Artesão sentado num banco grava com martelo e cinzel um pentáculo. À direita, seis pentáculos presos num poste de madeira; outro no chão, sob o banco. Cidade ao longe, à esquerda; fundo creme."
   },
   {
     "id": 72,
@@ -654,7 +654,7 @@
     "numeral_face": null,
     "inscricao_topo": "IX",
     "inscricao_base": null,
-    "elementos": "Figura em um vinhedo, com falcão encapuzado sobre a luva."
+    "elementos": "Mulher de vestido longo estampado com flores vermelhas, num vinhedo, apoia na mão erguida à direita um falcão de capuz vermelho. Nove pentáculos, seis à esquerda e três à direita; caracol embaixo à esquerda; céu amarelo."
   },
   {
     "id": 73,
@@ -663,7 +663,7 @@
     "numeral_face": null,
     "inscricao_topo": "X",
     "inscricao_base": null,
-    "elementos": "Pessoas de diferentes gerações e dois cães sob um arco."
+    "elementos": "Ancião de manto estampado sentado à esquerda, com dois cães brancos. Sob um arco de pedra, um casal conversa e uma criança, à direita, toca um cão. Dez pentáculos dispostos como a Árvore da Vida; torre e casas além do arco."
   },
   {
     "id": 74,
@@ -672,7 +672,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "PAGE of PENTACLES.",
-    "elementos": "Jovem contempla um pentáculo erguido entre as mãos."
+    "elementos": "Jovem de túnica verde e gorro vermelho, de pé num campo florido, ergue com as duas mãos um pentáculo à direita e o contempla. Árvores à esquerda, campo arado e montanha à direita; céu amarelo."
   },
   {
     "id": 75,
@@ -681,7 +681,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "KNIGHT of PENTACLES.",
-    "elementos": "Cavaleiro sustenta um pentáculo sobre um cavalo escuro parado."
+    "elementos": "Cavaleiro de armadura, com ramo verde no elmo, montado num cavalo negro pesado e imóvel, voltado para a direita, segura um pentáculo. Campo arado embaixo; céu amarelo."
   },
   {
     "id": 76,
@@ -690,7 +690,7 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "QUEEN of PENTACLES",
-    "elementos": "Rainha contempla um pentáculo no colo, com um coelho no primeiro plano."
+    "elementos": "Rainha de vestido vermelho e véu verde e branco, sentada num trono de pedra entalhado, olha o pentáculo que segura no colo com as duas mãos. Arco de rosas no alto, montanhas ao fundo e um coelho embaixo à direita; céu amarelo."
   },
   {
     "id": 77,
@@ -699,6 +699,6 @@
     "numeral_face": null,
     "inscricao_topo": null,
     "inscricao_base": "KING of PENTACLES.",
-    "elementos": "Rei com pentáculo e cetro, em trono com cabeças de touro, cercado por videiras."
+    "elementos": "Rei de manto coberto de cachos de uvas e folhas, sentado de frente num trono com cabeças de touro, segura um cetro com orbe à esquerda e um pentáculo à direita, sobre o joelho. Castelo à direita; céu amarelo."
   }
 ]

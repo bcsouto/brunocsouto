@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
 # Copyright (c) 2026 Bruno Corrêa Souto
-"""Coiote Místico 1.1.0: selo e abertura verificáveis de tiragens Rider-Waite-Smith."""
+"""Coiote Místico 1.2.0: selo e abertura verificáveis de tiragens Rider-Waite-Smith."""
 import hashlib
 import json
 import os
@@ -13,7 +13,7 @@ from pathlib import Path
 VERSAO = "TARO-RWS-3Q-V1"
 PASTA = Path(os.environ.get("COIOTE_DIR", str(Path.home() / ".coiote-mistico")))
 
-CATALOGO_SHA256 = "4778838756d105f43f66204dfcc127433d1f92d5910aaa306be1c81340afcd25"
+CATALOGO_SHA256 = "39f9962ec406e05aef102f29ec7e446e4a6f2ce49c96196d1c97633a28e0e250"
 AQUI = Path(__file__).resolve().parent
 CATALOGO_CANDIDATOS = (AQUI / "catalogo.json", AQUI.parent / "references" / "catalogo.json")
 CAMPOS = {"id": int, "nome": str, "nome_en": str, "numeral_face": (str, type(None)), "inscricao_topo": (str, type(None)), "inscricao_base": (str, type(None)), "elementos": str}
