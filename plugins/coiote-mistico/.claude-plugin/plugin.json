@@ -1,0 +1,15 @@
+{
+  "name": "coiote-mistico",
+  "displayName": "Coiote Místico",
+  "version": "1.0.0",
+  "description": "Consulta de tarô Rider-Waite-Smith com três perguntas, selo SHA-256 verificável antes da escolha e prompt de imagem da tiragem no padrão MidasFlow.",
+  "author": {
+    "name": "Bruno Corrêa Souto · in/brunocsouto",
+    "url": "https://www.linkedin.com/in/brunocsouto"
+  },
+  "homepage": "https://github.com/bcsouto-hub/coiote-mistico",
+  "repository": "https://github.com/bcsouto-hub/coiote-mistico",
+  "license": "MIT",
+  "keywords": ["tarô", "tarot", "rider-waite-smith", "oráculo", "midasflow"],
+  "icon": "./assets/coiote-mistico.png"
+}

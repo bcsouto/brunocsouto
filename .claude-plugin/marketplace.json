@@ -1,0 +1,15 @@
+{
+  "name": "brunocsouto",
+  "description": "Plugins de Bruno Corrêa Souto para o Claude.",
+  "owner": {
+    "name": "Bruno Corrêa Souto · in/brunocsouto",
+    "url": "https://www.linkedin.com/in/brunocsouto"
+  },
+  "plugins": [
+    {
+      "name": "coiote-mistico",
+      "source": "./plugins/coiote-mistico",
+      "description": "Consulta de tarô Rider-Waite-Smith com selo SHA-256 verificável e prompt de imagem da tiragem no padrão MidasFlow."
+    }
+  ]
+}
