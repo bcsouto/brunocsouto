@@ -1,5 +1,13 @@
 # Histórico
 
+## 1.0.1, 26/11/2026
+
+- Protocolo AnvisaLegis com 8 passos: "ver mais detalhes" também de cada ato do histórico (alteradores e revogados), datas de assinatura e de publicação no DOU separadas, republicação tratada como pendência de vigência, conferência dos dispositivos de vigência e prazos e registro de divergências do próprio AnvisaLegis.
+- Núcleo: material citado e não fornecido é informado na primeira linha; encaminhamento entre skills declarado em uma linha; recomendação separada dos fatos também na redação.
+- `analisar-regulacao`: tabela de vigência com uma linha por ato (situação, papel, assinatura, publicação, vigência, pendência).
+- `auditar-evidencias`: declara o encaminhamento para outra skill e abre com a falta de material.
+- Cenário de teste `r29-rdc-978-vigencia-sem-relatorio`, com 6 avaliadores, criado a partir da consulta refeita da RDC nº 978/2025 (29 cenários no total).
+
 ## 1.0.0, 26/11/2026
 
 Primeira versão publicada no Claude.

@@ -35,8 +35,11 @@ Um comunicado pode provar o anúncio de uma decisão, sem provar o desempenho cl
 
 1. Localize o ato pelo tipo, número e ano no AnvisaLegis.
 2. Registre a situação exibida: vigente, vigente com alterações, revogada ou alterador.
-3. Abra "ver mais detalhes" e anote atos que alteram, revogam ou são alterados pelo ato, com datas.
-4. Abra os atos relacionados quando a conclusão depender deles; confira o texto no DOU quando o dispositivo for decisivo.
-5. Registre data da consulta e cobertura obtida; sem acesso, mantenha a situação como não verificada.
+3. Abra "ver mais detalhes" do ato principal e anote o histórico: atos que o alteram, revogam ou são alterados ou revogados por ele.
+4. Abra também "ver mais detalhes" de cada ato desse histórico e registre a situação de cada um; um alterador pode ter sido alterado, revogado ou suspenso depois.
+5. Registre separadamente, para cada ato, a data de assinatura (a do título) e os dados de publicação no DOU (data, número, seção e página), além de retificações e republicações. Quando houver republicação, diga qual publicação a conclusão usa; se o início da vigência depender dessa escolha, registre a pendência.
+6. Confira no texto consolidado os dispositivos de vigência, prazos de adequação e revogação que a conclusão usa, incluindo se trazem anotação de nova redação.
+7. Registre divergências do próprio AnvisaLegis (por exemplo, uma data citada de forma diferente em páginas distintas) e confira o DOU quando a divergência afetar a conclusão.
+8. Registre data da consulta e cobertura obtida; sem acesso, mantenha a situação como não verificada.
 
 Use ferramentas existentes no ambiente, sem exigir conector por nome. Busca geral deve chegar à fonte pertinente; snippet isolado não basta. Conectores opcionais de documentos, pesquisa ou comunicação não fazem parte deste pacote. Não anuncie acesso a Slack, Drive, CourtListener, Federal Register API ou bases pagas apenas porque os materiais de origem os mencionam.
