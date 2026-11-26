@@ -1,4 +1,4 @@
-# PharmaAI Governance 1.0.1
+# PharmaAI Governance 1.0.2
 
 Autor: Bruno Corrêa Souto · /in/brunocsouto
 
@@ -32,12 +32,12 @@ As skills compartilham `references/NUCLEO.md` (princípios, tabela única de est
 
 ## Como usar
 
-No claude.ai: Personalizar, Plugins, Adicionar, Adicionar marketplace, informe `bcsouto/coiote-mistico` e instale o PharmaAI Governance.
+No claude.ai: Personalizar, Plugins, Adicionar, Adicionar marketplace, informe `bcsouto/brunocsouto` e instale o PharmaAI Governance.
 
 No Claude Code:
 
 ```bash
-claude plugin marketplace add bcsouto/coiote-mistico
+claude plugin marketplace add bcsouto/brunocsouto
 claude plugin install pharmaai-governance@brunocsouto
 ```
 
@@ -62,4 +62,4 @@ O último comando roda os 29 cenários de `evals/` com e sem o plugin; são exec
 
 O plugin usa duas licenças. O código (o validador `validate_dossier.py`, os esquemas JSON do dossiê e os testes) está sob a licença MIT. Todo o restante (instruções das skills, referências, modelos, cenários, README e ícone) está sob a Creative Commons Atribuição-NãoComercial-SemDerivações 4.0 Internacional (CC BY-NC-ND 4.0): pode ser copiado e redistribuído sem alterações, com crédito ao autor e sem fins comerciais. Versões modificadas e uso comercial dependem de autorização prévia e por escrito. Veja `LICENSE` e `LICENSES/`.
 
-Versões: plugin 1.0.1. O formato do dossiê JSON tem numeração própria, 1.1.0, e o validador também lê o formato 1.0.0. Proveniência em `NOTICE.md`; documentação oficial consultada em `docs/ANTHROPIC.md`.
+Versões: plugin 1.0.2. O formato do dossiê JSON tem numeração própria, 1.1.0, e o validador também lê o formato 1.0.0. Proveniência em `NOTICE.md`; documentação oficial consultada em `docs/ANTHROPIC.md`.

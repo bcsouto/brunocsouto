@@ -1,5 +1,9 @@
 # Histórico
 
+## 1.0.2, 26/11/2026
+
+- Repositório do marketplace renomeado para `bcsouto/brunocsouto`; endereços de instalação, `homepage` e `repository` atualizados.
+
 ## 1.0.1, 26/11/2026
 
 - Protocolo AnvisaLegis com 8 passos: "ver mais detalhes" também de cada ato do histórico (alteradores e revogados), datas de assinatura e de publicação no DOU separadas, republicação tratada como pendência de vigência, conferência dos dispositivos de vigência e prazos e registro de divergências do próprio AnvisaLegis.
