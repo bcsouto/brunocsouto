@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
 # Copyright (c) 2026 Bruno Corrêa Souto
-"""Coiote Místico 1.2.0: selo e abertura verificáveis de tiragens Rider-Waite-Smith."""
+"""Coiote Místico 1.2.1: selo e abertura verificáveis de tiragens Rider-Waite-Smith."""
 import hashlib
 import json
 import os

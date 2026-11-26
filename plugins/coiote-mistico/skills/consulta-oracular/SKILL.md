@@ -63,7 +63,7 @@ O script `scripts/tiragem.py` faz o embaralhamento criptográfico, grava o regis
 
 ```bash
 mkdir -p /tmp/coiote-mistico
-H=adeca039125577e7274759428c0073d9c4de31fdab0670a100e7882810220a30
+H=e4c3d4325a011c253380c961c699f59cbd8b31f0c67e129d8b1be0680bfa2f38
 S="${CLAUDE_SKILL_DIR}/scripts/tiragem.py"
 echo "$H  $S" | sha256sum -c --status 2>/dev/null || S=$(find / -type f -path '*/consulta-oracular/scripts/tiragem.py' -exec sh -c 'echo "$0  $1" | sha256sum -c --status' "$H" {} \; -print -quit 2>/dev/null)
 D=$(dirname "$(dirname "$S")")
@@ -154,7 +154,7 @@ The three cards rest on a deep indigo background inside a discreet Renaissance g
 
 Logo depois do bloco, inclua:
 
-1. A linha de ajustes de menu: `Imagem · 4:3 · Nano Banana Pro · x2 · upscale 2K depois de gerar`, sem nível de raciocínio, que o Pro não tem. Logo abaixo, a troca declarada: 3:2 pedida, 4:3 aplicada.
+1. A linha de ajustes de menu: `Imagem · 4:3 · Nano Banana Pro · x2 · upscale 2K depois de gerar`, sem nível de raciocínio, que o Pro não tem. Logo abaixo, a troca declarada: 3:2 pedida, 4:3 aplicada. Se a prancha tiver cartas de 2 a 10, acrescente uma linha de conferência, porque o gerador costuma errar a contagem de objetos repetidos: `Conferir nas duas imagens: <carta>, <N> <objetos> (<distribuição de elementos, se houver>)`, uma carta após a outra, e oriente a escolher a imagem que acertar.
 2. Uma tabela de resumo curta: as três cartas da esquerda para a direita e as referências usadas.
 3. O **Leque do Diretor**: três variações rotuladas, cada uma em uma linha, alterando só o tratamento da prancha. **A.** Fiel: litografia clássica, como no bloco. **B.** Grimório: moldura mais ornamentada, folha de ouro e luz de vela vinda da esquerda. **C.** Ousada: leitura cinematográfica, com feixe de luz volumétrica vindo do alto sobre as cartas, sem alterar as faces.
 4. O rodapé: *Compilado por MidasFlow · sistema por Bruno Corrêa Souto · in/brunocsouto*
