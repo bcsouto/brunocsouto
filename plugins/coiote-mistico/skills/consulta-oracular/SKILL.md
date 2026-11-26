@@ -55,7 +55,7 @@ Mantenha a resposta principal em prosa, com parágrafos curtos e tom de conversa
 
 ## Bastidores: o script da tiragem
 
-O baralho é o **gêmeo digital do Rider-Waite-Smith físico**: 78 cartas, uma de cada, sempre em pé, três retiradas sem reposição. Cada carta conserva seu ID de `0` a `77`; a posição de `1` a `78` muda a cada embaralhamento. Os numerais da face pertencem à edição física (A Força traz `VIII`, A Justiça traz `XI`); nos arcanos menores, siga as inscrições da edição de referência.
+O baralho é o **gêmeo digital do Rider-Waite-Smith físico**: 78 cartas, uma de cada, sempre em pé, três retiradas sem reposição. Cada carta conserva seu ID de `0` a `77`; a posição de `1` a `78` muda a cada embaralhamento. Os numerais da face pertencem à edição física (A Força traz `VIII`, A Justiça traz `XI`). As inscrições de cada face seguem a primeira edição, de dezembro de 1909, e estão no catálogo.
 
 O script `scripts/tiragem.py` faz o embaralhamento criptográfico, grava o registro e confere o selo; o catálogo das 78 cartas fica em `references/catalogo.json`, e o script confere o SHA-256 dele antes de selar ou abrir. Ele existe porque a promessa da consulta é verificável: a ordem fica fixada e publicada como hash antes da escolha, e qualquer pessoa pode conferir depois. Fazer isso de cabeça quebraria a promessa, então toda rodada passa pelo script.
 
@@ -63,7 +63,7 @@ O script `scripts/tiragem.py` faz o embaralhamento criptográfico, grava o regis
 
 ```bash
 mkdir -p /tmp/coiote-mistico
-H=cedd617929da7f6ffde4bc9b1236b1671a53d92561eb9934c5800624f91e8a0a
+H=519f90430294382d64f45aeb40e95bff6051e60b0658d8a1bb41eefc621e9239
 S="${CLAUDE_SKILL_DIR}/scripts/tiragem.py"
 echo "$H  $S" | sha256sum -c --status 2>/dev/null || S=$(find / -type f -path '*/consulta-oracular/scripts/tiragem.py' -exec sh -c 'echo "$0  $1" | sha256sum -c --status' "$H" {} \; -print -quit 2>/dev/null)
 D=$(dirname "$(dirname "$S")")
@@ -91,7 +91,7 @@ python3 -I /tmp/coiote-mistico/tiragem.py abrir 'SELO' '78 1 23'
 
 Nunca copie o texto do viajante para dentro de um comando: se a mensagem não trouxer exatamente três números inteiros, peça a correção sem rodar nada. Isso impede que um texto digitado no lugar dos números seja executado pelo terminal.
 
-O script recalcula o hash, valida o registro e devolve, para cada pergunta, a posição, o ID, os nomes, o numeral e os elementos da carta, além de `registro_json`. Conforme o código de saída:
+O script recalcula o hash, valida o registro e devolve, para cada pergunta, a posição, o ID, os nomes, o numeral, as inscrições da face e os elementos da carta, além de `registro_json`. Conforme o código de saída:
 
 | Código | Situação | O que fazer |
 |---|---|---|
@@ -120,25 +120,35 @@ Regras de compilação:
 - **Proporção:** a prancha pedida é 3:2, que não está no menu do Flow web; pela regra da base, 3:2 vai a 4:3, com a troca dita em uma linha. A proporção aparece também escrita no prompt.
 - **Resolução:** gere no Pro e aplique o upscale até 2K depois; nunca prometa 4K.
 - **Prosa dirigida:** instruções em inglês, em frases descritivas que cobrem os blocos canônicos da base (estilo, assunto, cenário, composição) e a luz com fonte, qualidade e efeito. Diga para que a imagem serve. Nada de lista de palavras-chave nem de adjetivo vazio.
-- **Texto definido antes:** numeral no alto, a partir de `numeral_face`, e título em caixa alta, a partir de `nome_en`, sempre entre aspas, com a tipografia descrita, retos e horizontais. Quando `numeral_face` for nulo, siga as inscrições da edição de referência nos arcanos menores.
+- **Texto definido antes:** cada face leva exatamente as inscrições da edição de 1909, copiadas de `inscricao_topo` e `inscricao_base`, entre aspas, com a mesma grafia, inclusive o `of` minúsculo e a pontuação. Campo nulo significa que aquela faixa não tem texto: as cartas de 2 a 10 trazem só o numeral no alto e nenhum título embaixo; os Ases e as cartas da corte trazem só o título embaixo e nenhum numeral. Nunca traduza, complete nem invente uma inscrição.
+- **Letreiro de época:** o texto pertence à impressão. Descreva o numeral no alto da cena, logo abaixo do filete preto da moldura, e o título numa faixa creme estreita sob a cena, contornada por um filete preto fino, ambos à mão em capitulares romanas de traço levemente irregular, na mesma tinta preta dos contornos, com o grão do papel, a leve expansão da tinta e o desgaste da carta, para que se leia como impresso junto com a litografia e não aplicado depois. Peça o texto nítido e legível.
 - **Hiperespecificidade:** descreva cada face pelos objetos, gestos, cores e posições de `elementos`, com lateralidade explícita (left / right) quando a cena depender dela; não confie no nome da carta.
 - **Escala e ordem:** três cartas inteiras, em pé, do mesmo tamanho, lado a lado, com espaçamento igual; esquerda, centro e direita seguem a ordem da escolha.
-- **Negativo semântico:** descreva em positivo o que se quer. Negativo explícito só onde a geração costuma errar: carta invertida ou girada. Em O Enforcado, diga que a carta está em pé e a figura, de cabeça para baixo dentro dela.
+- **Negativo semântico:** descreva em positivo o que se quer. Negativo explícito só onde a geração costuma errar: carta invertida ou girada, e texto inventado, como título nas cartas de 2 a 10 ou fonte digital. Em O Enforcado, diga que a carta está em pé e a figura, de cabeça para baixo dentro dela.
 - **Referências:** se o viajante anexar fotos das próprias cartas, associe cada anexo à carta pelo nome do arquivo ou pela ordem (no Pro, até 6 referências de objeto) e peça preservação de composição, cores e inscrições; para as demais, a iconografia clássica de Pamela Colman Smith.
 - **Privacidade:** perguntas, dados pessoais, posições, IDs e dados de verificação nunca entram no prompt. Legenda extra só se o viajante pedir, com o texto exato entre aspas e o local indicado.
+
+Frases das inscrições, escolhidas carta a carta pelos campos devolvidos:
+
+| Campo | Preenchido | Nulo |
+|---|---|---|
+| `inscricao_topo` | `Centered in the top margin of the picture, just inside the black frame line, the Roman numeral "<inscricao_topo>" is drawn in the same black ink as the outlines.` | `The picture reaches the top frame line with no numeral.` |
+| `inscricao_base` | `Beneath the picture, a narrow cream title band boxed by a thin black rule carries the hand-lettered title "<inscricao_base>".` | `The picture runs down to the bottom frame line, with no title band and no text.` |
 
 Preencha este modelo em prosa contínua e entregue-o em um bloco `text`:
 
 ```text
 Create a horizontal 4:3 tarot reading board, a keepsake image of a three-card spread, showing exactly three Rider-Waite-Smith tarot cards standing upright side by side at identical size, evenly spaced and fully visible. The cards follow the classic iconography of Pamela Colman Smith: flat lithographic color in muted yellow, red, blue and ochre, with bold black ink outlines.
 
-The left card is <nome_en>: <hyper-specific description from elementos, with explicit left and right>. At the top, the Roman numeral "<numeral_face>"; at the bottom, the title "<TITLE IN CAPS>", both in straight horizontal serif capitals in the style of early twentieth century lithographic printing.
+The left card is <nome_en>: <hyper-specific description from elementos, with explicit left and right>. <frase do topo> <frase da base>
 
 The center card is <same structure>.
 
 The right card is <same structure>.
 
-The three cards rest on a deep indigo background inside a discreet Renaissance grimoire frame with aged paper texture and matte gold ornament; the frame stays outside the card faces. Soft, diffused light from slightly above the camera falls evenly across the three faces, with no glare. Shot straight on at eye level, centered composition with equal margins. Every card stands upright, never reversed or rotated, and the only text in the image is the quoted numerals and titles.
+All lettering belongs to the original 1909 lithograph: hand-drawn Roman capitals with slightly uneven stroke weight and baseline, the connecting word of written small in lower case, printed in the same black ink as the outlines and sharing the paper grain, the slight ink spread and the gentle wear of each card, crisp and legible, so it reads as printed with the card rather than added afterwards.
+
+The three cards rest on a deep indigo background inside a discreet Renaissance grimoire frame with aged paper texture and matte gold ornament; the frame stays outside the card faces. Soft, diffused light from slightly above the camera falls evenly across the three faces, with no glare. Shot straight on at eye level, centered composition with equal margins. Every card stands upright, never reversed or rotated, and the only text in the image is the quoted numerals and titles, with no digital typeface, caption or watermark.
 ```
 
 Logo depois do bloco, inclua:

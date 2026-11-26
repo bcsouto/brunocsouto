@@ -4,6 +4,8 @@
     "nome": "O Louco",
     "nome_en": "The Fool",
     "numeral_face": "0",
+    "inscricao_topo": "0",
+    "inscricao_base": "THE FOOL.",
     "elementos": "Viajante à beira do precipício, rosa branca e cão."
   },
   {
@@ -11,6 +13,8 @@
     "nome": "O Mago",
     "nome_en": "The Magician",
     "numeral_face": "I",
+    "inscricao_topo": "I",
+    "inscricao_base": "THE MAGICIAN.",
     "elementos": "Bastão erguido, símbolo do infinito e quatro emblemas sobre a mesa."
   },
   {
@@ -18,6 +22,8 @@
     "nome": "A Sacerdotisa",
     "nome_en": "The High Priestess",
     "numeral_face": "II",
+    "inscricao_topo": "II",
+    "inscricao_base": "THE HIGH PRIESTESS",
     "elementos": "Pilares B e J, véu com romãs e rolo parcialmente coberto."
   },
   {
@@ -25,6 +31,8 @@
     "nome": "A Imperatriz",
     "nome_en": "The Empress",
     "numeral_face": "III",
+    "inscricao_topo": "III",
+    "inscricao_base": "THE EMPRESS.",
     "elementos": "Trigo, coroa de estrelas e escudo com o símbolo de Vênus."
   },
   {
@@ -32,6 +40,8 @@
     "nome": "O Imperador",
     "nome_en": "The Emperor",
     "numeral_face": "IV",
+    "inscricao_topo": "IV",
+    "inscricao_base": "THE EMPEROR.",
     "elementos": "Trono com cabeças de carneiro e montanhas."
   },
   {
@@ -39,6 +49,8 @@
     "nome": "O Hierofante",
     "nome_en": "The Hierophant",
     "numeral_face": "V",
+    "inscricao_topo": "V",
+    "inscricao_base": "THE HIEROPHANT.",
     "elementos": "Tiara, dois acólitos e chaves cruzadas."
   },
   {
@@ -46,6 +58,8 @@
     "nome": "Os Enamorados",
     "nome_en": "The Lovers",
     "numeral_face": "VI",
+    "inscricao_topo": "VI",
+    "inscricao_base": "THE LOVERS.",
     "elementos": "Duas figuras sob um anjo e uma serpente em uma das árvores."
   },
   {
@@ -53,6 +67,8 @@
     "nome": "O Carro",
     "nome_en": "The Chariot",
     "numeral_face": "VII",
+    "inscricao_topo": "VII",
+    "inscricao_base": "THE CHARIOT.",
     "elementos": "Condutor sob dossel estrelado, com uma esfinge clara e outra escura."
   },
   {
@@ -60,6 +76,8 @@
     "nome": "A Força",
     "nome_en": "Strength",
     "numeral_face": "VIII",
+    "inscricao_topo": "VIII",
+    "inscricao_base": "STRENGTH.",
     "elementos": "Mulher junto à boca de um leão, com o símbolo do infinito acima da cabeça."
   },
   {
@@ -67,6 +85,8 @@
     "nome": "O Eremita",
     "nome_en": "The Hermit",
     "numeral_face": "IX",
+    "inscricao_topo": "IX",
+    "inscricao_base": "THE HERMIT.",
     "elementos": "Figura encapuzada com cajado e estrela dentro da lanterna."
   },
   {
@@ -74,6 +94,8 @@
     "nome": "A Roda da Fortuna",
     "nome_en": "Wheel of Fortune",
     "numeral_face": "X",
+    "inscricao_topo": "X",
+    "inscricao_base": "WHEEL of FORTUNE.",
     "elementos": "Roda inscrita, esfinge acima e quatro figuras aladas nos cantos."
   },
   {
@@ -81,6 +103,8 @@
     "nome": "A Justiça",
     "nome_en": "Justice",
     "numeral_face": "XI",
+    "inscricao_topo": "XI",
+    "inscricao_base": "JUSTICE.",
     "elementos": "Figura entre pilares, com balança e espada erguida."
   },
   {
@@ -88,6 +112,8 @@
     "nome": "O Enforcado",
     "nome_en": "The Hanged Man",
     "numeral_face": "XII",
+    "inscricao_topo": "XII",
+    "inscricao_base": "THE HANGED MAN.",
     "elementos": "Figura suspensa por um pé, com a outra perna dobrada e uma auréola."
   },
   {
@@ -95,6 +121,8 @@
     "nome": "A Morte",
     "nome_en": "Death",
     "numeral_face": "XIII",
+    "inscricao_topo": "XIII",
+    "inscricao_base": "DEATH.",
     "elementos": "Esqueleto em armadura, cavalo branco e estandarte escuro com rosa branca."
   },
   {
@@ -102,6 +130,8 @@
     "nome": "A Temperança",
     "nome_en": "Temperance",
     "numeral_face": "XIV",
+    "inscricao_topo": "XIV",
+    "inscricao_base": "TEMPERANCE.",
     "elementos": "Anjo verte líquido entre duas taças, com um pé na água e outro em terra."
   },
   {
@@ -109,6 +139,8 @@
     "nome": "O Diabo",
     "nome_en": "The Devil",
     "numeral_face": "XV",
+    "inscricao_topo": "XV",
+    "inscricao_base": "THE DEVIL.",
     "elementos": "Figura alada sobre pedestal e duas figuras humanas acorrentadas."
   },
   {
@@ -116,6 +148,8 @@
     "nome": "A Torre",
     "nome_en": "The Tower",
     "numeral_face": "XVI",
+    "inscricao_topo": "XVI",
+    "inscricao_base": "THE TOWER.",
     "elementos": "Raio, coroa deslocada e figuras em queda."
   },
   {
@@ -123,6 +157,8 @@
     "nome": "A Estrela",
     "nome_en": "The Star",
     "numeral_face": "XVII",
+    "inscricao_topo": "XVII",
+    "inscricao_base": "THE STAR.",
     "elementos": "Uma estrela grande, sete menores e água vertida de dois jarros."
   },
   {
@@ -130,6 +166,8 @@
     "nome": "A Lua",
     "nome_en": "The Moon",
     "numeral_face": "XVIII",
+    "inscricao_topo": "XVIII",
+    "inscricao_base": "THE MOON.",
     "elementos": "Cão, lobo e crustáceo que emerge da água, com duas torres ao fundo."
   },
   {
@@ -137,6 +175,8 @@
     "nome": "O Sol",
     "nome_en": "The Sun",
     "numeral_face": "XIX",
+    "inscricao_topo": "XIX",
+    "inscricao_base": "THE SUN.",
     "elementos": "Criança em cavalo branco, estandarte vermelho e girassóis."
   },
   {
@@ -144,6 +184,8 @@
     "nome": "O Julgamento",
     "nome_en": "Judgement",
     "numeral_face": "XX",
+    "inscricao_topo": "XX",
+    "inscricao_base": "JUDGEMENT.",
     "elementos": "Anjo com trombeta e figuras que se erguem de caixões."
   },
   {
@@ -151,6 +193,8 @@
     "nome": "O Mundo",
     "nome_en": "The World",
     "numeral_face": "XXI",
+    "inscricao_topo": "XXI",
+    "inscricao_base": "THE WORLD.",
     "elementos": "Figura dançante dentro de uma grinalda, com quatro figuras nos cantos."
   },
   {
@@ -158,6 +202,8 @@
     "nome": "Ás de Paus",
     "nome_en": "Ace of Wands",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "ACE of WANDS.",
     "elementos": "Mão saindo da nuvem segura um bastão com brotos."
   },
   {
@@ -165,6 +211,8 @@
     "nome": "Dois de Paus",
     "nome_en": "Two of Wands",
     "numeral_face": null,
+    "inscricao_topo": "II",
+    "inscricao_base": null,
     "elementos": "Figura com globo entre dois bastões, no alto de uma muralha."
   },
   {
@@ -172,6 +220,8 @@
     "nome": "Três de Paus",
     "nome_en": "Three of Wands",
     "numeral_face": null,
+    "inscricao_topo": "III",
+    "inscricao_base": null,
     "elementos": "Figura de costas entre três bastões, olhando embarcações ao longe."
   },
   {
@@ -179,6 +229,8 @@
     "nome": "Quatro de Paus",
     "nome_en": "Four of Wands",
     "numeral_face": null,
+    "inscricao_topo": "IV",
+    "inscricao_base": null,
     "elementos": "Guirlanda suspensa nos quatro bastões e figuras em celebração."
   },
   {
@@ -186,6 +238,8 @@
     "nome": "Cinco de Paus",
     "nome_en": "Five of Wands",
     "numeral_face": null,
+    "inscricao_topo": "V",
+    "inscricao_base": null,
     "elementos": "Cinco jovens erguem bastões que se cruzam."
   },
   {
@@ -193,6 +247,8 @@
     "nome": "Seis de Paus",
     "nome_en": "Six of Wands",
     "numeral_face": null,
+    "inscricao_topo": "VI",
+    "inscricao_base": null,
     "elementos": "Figura a cavalo com coroa de louros e outra coroa no bastão."
   },
   {
@@ -200,6 +256,8 @@
     "nome": "Sete de Paus",
     "nome_en": "Seven of Wands",
     "numeral_face": null,
+    "inscricao_topo": "VII",
+    "inscricao_base": null,
     "elementos": "Figura em terreno elevado empunha um bastão diante de seis que sobem."
   },
   {
@@ -207,6 +265,8 @@
     "nome": "Oito de Paus",
     "nome_en": "Eight of Wands",
     "numeral_face": null,
+    "inscricao_topo": "VIII",
+    "inscricao_base": null,
     "elementos": "Oito bastões cruzam o céu em diagonal."
   },
   {
@@ -214,6 +274,8 @@
     "nome": "Nove de Paus",
     "nome_en": "Nine of Wands",
     "numeral_face": null,
+    "inscricao_topo": "IX",
+    "inscricao_base": null,
     "elementos": "Figura com a cabeça enfaixada, um bastão na mão e oito atrás."
   },
   {
@@ -221,6 +283,8 @@
     "nome": "Dez de Paus",
     "nome_en": "Ten of Wands",
     "numeral_face": null,
+    "inscricao_topo": "X",
+    "inscricao_base": null,
     "elementos": "Figura curvada carrega dez bastões em direção às construções."
   },
   {
@@ -228,6 +292,8 @@
     "nome": "Pajem de Paus",
     "nome_en": "Page of Wands",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "PAGE of WANDS.",
     "elementos": "Jovem contempla um bastão erguido em paisagem árida."
   },
   {
@@ -235,6 +301,8 @@
     "nome": "Cavaleiro de Paus",
     "nome_en": "Knight of Wands",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "KNIGHT of WANDS.",
     "elementos": "Cavaleiro com bastão sobre cavalo que ergue as patas dianteiras."
   },
   {
@@ -242,6 +310,8 @@
     "nome": "Rainha de Paus",
     "nome_en": "Queen of Wands",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "QUEEN of WANDS.",
     "elementos": "Girassol na mão e gato preto aos pés."
   },
   {
@@ -249,6 +319,8 @@
     "nome": "Rei de Paus",
     "nome_en": "King of Wands",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "KING of WANDS",
     "elementos": "Bastão, motivos de salamandra e uma salamandra junto ao trono."
   },
   {
@@ -256,6 +328,8 @@
     "nome": "Ás de Copas",
     "nome_en": "Ace of Cups",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "ACE of CUPS.",
     "elementos": "Mão sustenta um cálice transbordante sob uma pomba."
   },
   {
@@ -263,6 +337,8 @@
     "nome": "Dois de Copas",
     "nome_en": "Two of Cups",
     "numeral_face": null,
+    "inscricao_topo": "II",
+    "inscricao_base": null,
     "elementos": "Duas taças erguidas sob um caduceu e uma cabeça de leão alada."
   },
   {
@@ -270,6 +346,8 @@
     "nome": "Três de Copas",
     "nome_en": "Three of Cups",
     "numeral_face": null,
+    "inscricao_topo": "III",
+    "inscricao_base": null,
     "elementos": "Três figuras erguem taças sobre um chão com frutos da colheita."
   },
   {
@@ -277,6 +355,8 @@
     "nome": "Quatro de Copas",
     "nome_en": "Four of Cups",
     "numeral_face": null,
+    "inscricao_topo": "IV",
+    "inscricao_base": null,
     "elementos": "Figura junto à árvore, três taças no chão e uma quarta oferecida pela nuvem."
   },
   {
@@ -284,6 +364,8 @@
     "nome": "Cinco de Copas",
     "nome_en": "Five of Cups",
     "numeral_face": null,
+    "inscricao_topo": "V",
+    "inscricao_base": null,
     "elementos": "Figura de capa escura, três taças tombadas e duas de pé."
   },
   {
@@ -291,6 +373,8 @@
     "nome": "Seis de Copas",
     "nome_en": "Six of Cups",
     "numeral_face": null,
+    "inscricao_topo": "VI",
+    "inscricao_base": null,
     "elementos": "Figura jovem oferece a outra uma taça com flores brancas."
   },
   {
@@ -298,6 +382,8 @@
     "nome": "Sete de Copas",
     "nome_en": "Seven of Cups",
     "numeral_face": null,
+    "inscricao_topo": "VII",
+    "inscricao_base": null,
     "elementos": "Silhueta diante de sete taças sobre nuvens, cada qual com uma visão."
   },
   {
@@ -305,6 +391,8 @@
     "nome": "Oito de Copas",
     "nome_en": "Eight of Cups",
     "numeral_face": null,
+    "inscricao_topo": "VIII",
+    "inscricao_base": null,
     "elementos": "Figura se afasta das oito taças sob a lua."
   },
   {
@@ -312,6 +400,8 @@
     "nome": "Nove de Copas",
     "nome_en": "Nine of Cups",
     "numeral_face": null,
+    "inscricao_topo": "IX",
+    "inscricao_base": null,
     "elementos": "Figura sentada de braços cruzados, com nove taças atrás."
   },
   {
@@ -319,6 +409,8 @@
     "nome": "Dez de Copas",
     "nome_en": "Ten of Cups",
     "numeral_face": null,
+    "inscricao_topo": "X",
+    "inscricao_base": null,
     "elementos": "Dez taças em um arco-íris sobre uma família."
   },
   {
@@ -326,6 +418,8 @@
     "nome": "Pajem de Copas",
     "nome_en": "Page of Cups",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "PAGE of CUPS.",
     "elementos": "Jovem olha para o peixe que emerge da taça."
   },
   {
@@ -333,6 +427,8 @@
     "nome": "Cavaleiro de Copas",
     "nome_en": "Knight of Cups",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "KNIGHT of CUPS.",
     "elementos": "Cavaleiro estende uma taça sobre um cavalo claro."
   },
   {
@@ -340,6 +436,8 @@
     "nome": "Rainha de Copas",
     "nome_en": "Queen of Cups",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "QUEEN of CUPS.",
     "elementos": "Rainha à beira da água contempla um cálice fechado e ornamentado."
   },
   {
@@ -347,6 +445,8 @@
     "nome": "Rei de Copas",
     "nome_en": "King of Cups",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "KING of CUPS.",
     "elementos": "Rei com taça e cetro em um trono cercado pelo mar."
   },
   {
@@ -354,6 +454,8 @@
     "nome": "Ás de Espadas",
     "nome_en": "Ace of Swords",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "ACE of SWORDS.",
     "elementos": "Mão na nuvem ergue uma espada cuja ponta passa por uma coroa."
   },
   {
@@ -361,6 +463,8 @@
     "nome": "Dois de Espadas",
     "nome_en": "Two of Swords",
     "numeral_face": null,
+    "inscricao_topo": "II",
+    "inscricao_base": null,
     "elementos": "Figura vendada, espadas cruzadas e lua crescente sobre o mar."
   },
   {
@@ -368,6 +472,8 @@
     "nome": "Três de Espadas",
     "nome_en": "Three of Swords",
     "numeral_face": null,
+    "inscricao_topo": "III",
+    "inscricao_base": null,
     "elementos": "Três espadas atravessam um coração sob a chuva."
   },
   {
@@ -375,6 +481,8 @@
     "nome": "Quatro de Espadas",
     "nome_en": "Four of Swords",
     "numeral_face": null,
+    "inscricao_topo": "IV",
+    "inscricao_base": null,
     "elementos": "Efígie deitada, três espadas na parede e uma junto ao túmulo."
   },
   {
@@ -382,6 +490,8 @@
     "nome": "Cinco de Espadas",
     "nome_en": "Five of Swords",
     "numeral_face": null,
+    "inscricao_topo": "V",
+    "inscricao_base": null,
     "elementos": "Figura recolhe espadas enquanto outras duas se afastam."
   },
   {
@@ -389,6 +499,8 @@
     "nome": "Seis de Espadas",
     "nome_en": "Six of Swords",
     "numeral_face": null,
+    "inscricao_topo": "VI",
+    "inscricao_base": null,
     "elementos": "Barco com passageiros e seis espadas fincadas."
   },
   {
@@ -396,6 +508,8 @@
     "nome": "Sete de Espadas",
     "nome_en": "Seven of Swords",
     "numeral_face": null,
+    "inscricao_topo": "VII",
+    "inscricao_base": null,
     "elementos": "Figura leva cinco espadas e deixa duas junto ao acampamento."
   },
   {
@@ -403,6 +517,8 @@
     "nome": "Oito de Espadas",
     "nome_en": "Eight of Swords",
     "numeral_face": null,
+    "inscricao_topo": "VIII",
+    "inscricao_base": null,
     "elementos": "Figura vendada e amarrada, cercada por oito espadas."
   },
   {
@@ -410,6 +526,8 @@
     "nome": "Nove de Espadas",
     "nome_en": "Nine of Swords",
     "numeral_face": null,
+    "inscricao_topo": "IX",
+    "inscricao_base": null,
     "elementos": "Figura sentada na cama com o rosto entre as mãos, sob nove espadas."
   },
   {
@@ -417,6 +535,8 @@
     "nome": "Dez de Espadas",
     "nome_en": "Ten of Swords",
     "numeral_face": null,
+    "inscricao_topo": "X",
+    "inscricao_base": null,
     "elementos": "Figura caída com dez espadas nas costas e uma faixa clara no horizonte."
   },
   {
@@ -424,6 +544,8 @@
     "nome": "Pajem de Espadas",
     "nome_en": "Page of Swords",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "PAGE of SWORDS.",
     "elementos": "Jovem sustenta a espada com as duas mãos em colina ventosa."
   },
   {
@@ -431,6 +553,8 @@
     "nome": "Cavaleiro de Espadas",
     "nome_en": "Knight of Swords",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "KNIGHT of SWORDS.",
     "elementos": "Cavaleiro com espada erguida sobre cavalo em disparada."
   },
   {
@@ -438,6 +562,8 @@
     "nome": "Rainha de Espadas",
     "nome_en": "Queen of Swords",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "QUEEN of SWORDS.",
     "elementos": "Rainha com espada vertical e a mão livre estendida."
   },
   {
@@ -445,6 +571,8 @@
     "nome": "Rei de Espadas",
     "nome_en": "King of Swords",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "KING of SWORDS.",
     "elementos": "Rei sentado de frente, com espada erguida."
   },
   {
@@ -452,6 +580,8 @@
     "nome": "Ás de Ouros",
     "nome_en": "Ace of Pentacles",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "ACE of PENTACLES.",
     "elementos": "Mão apresenta um pentáculo sobre um jardim com arco vegetal."
   },
   {
@@ -459,6 +589,8 @@
     "nome": "Dois de Ouros",
     "nome_en": "Two of Pentacles",
     "numeral_face": null,
+    "inscricao_topo": "II",
+    "inscricao_base": null,
     "elementos": "Dois pentáculos ligados por uma alça em forma de infinito, com barcos ao fundo."
   },
   {
@@ -466,6 +598,8 @@
     "nome": "Três de Ouros",
     "nome_en": "Three of Pentacles",
     "numeral_face": null,
+    "inscricao_topo": "III",
+    "inscricao_base": null,
     "elementos": "Artesão e duas figuras sob um arco de pedra com três pentáculos."
   },
   {
@@ -473,6 +607,8 @@
     "nome": "Quatro de Ouros",
     "nome_en": "Four of Pentacles",
     "numeral_face": null,
+    "inscricao_topo": "IV",
+    "inscricao_base": null,
     "elementos": "Um pentáculo junto ao peito, um sobre a coroa e dois sob os pés."
   },
   {
@@ -480,6 +616,8 @@
     "nome": "Cinco de Ouros",
     "nome_en": "Five of Pentacles",
     "numeral_face": null,
+    "inscricao_topo": "V",
+    "inscricao_base": null,
     "elementos": "Duas figuras passam pela neve diante de um vitral iluminado."
   },
   {
@@ -487,6 +625,8 @@
     "nome": "Seis de Ouros",
     "nome_en": "Six of Pentacles",
     "numeral_face": null,
+    "inscricao_topo": "VI",
+    "inscricao_base": null,
     "elementos": "Figura com balança distribui moedas a uma pessoa ajoelhada."
   },
   {
@@ -494,6 +634,8 @@
     "nome": "Sete de Ouros",
     "nome_en": "Seven of Pentacles",
     "numeral_face": null,
+    "inscricao_topo": "VII",
+    "inscricao_base": null,
     "elementos": "Pessoa apoiada em uma ferramenta contempla a planta com pentáculos."
   },
   {
@@ -501,6 +643,8 @@
     "nome": "Oito de Ouros",
     "nome_en": "Eight of Pentacles",
     "numeral_face": null,
+    "inscricao_topo": "VIII",
+    "inscricao_base": null,
     "elementos": "Artesão grava um pentáculo, com outros expostos ao lado."
   },
   {
@@ -508,6 +652,8 @@
     "nome": "Nove de Ouros",
     "nome_en": "Nine of Pentacles",
     "numeral_face": null,
+    "inscricao_topo": "IX",
+    "inscricao_base": null,
     "elementos": "Figura em um vinhedo, com falcão encapuzado sobre a luva."
   },
   {
@@ -515,6 +661,8 @@
     "nome": "Dez de Ouros",
     "nome_en": "Ten of Pentacles",
     "numeral_face": null,
+    "inscricao_topo": "X",
+    "inscricao_base": null,
     "elementos": "Pessoas de diferentes gerações e dois cães sob um arco."
   },
   {
@@ -522,6 +670,8 @@
     "nome": "Pajem de Ouros",
     "nome_en": "Page of Pentacles",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "PAGE of PENTACLES.",
     "elementos": "Jovem contempla um pentáculo erguido entre as mãos."
   },
   {
@@ -529,6 +679,8 @@
     "nome": "Cavaleiro de Ouros",
     "nome_en": "Knight of Pentacles",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "KNIGHT of PENTACLES.",
     "elementos": "Cavaleiro sustenta um pentáculo sobre um cavalo escuro parado."
   },
   {
@@ -536,6 +688,8 @@
     "nome": "Rainha de Ouros",
     "nome_en": "Queen of Pentacles",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "QUEEN of PENTACLES",
     "elementos": "Rainha contempla um pentáculo no colo, com um coelho no primeiro plano."
   },
   {
@@ -543,6 +697,8 @@
     "nome": "Rei de Ouros",
     "nome_en": "King of Pentacles",
     "numeral_face": null,
+    "inscricao_topo": null,
+    "inscricao_base": "KING of PENTACLES.",
     "elementos": "Rei com pentáculo e cetro, em trono com cabeças de touro, cercado por videiras."
   }
 ]
