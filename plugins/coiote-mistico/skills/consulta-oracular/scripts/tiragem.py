@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
 # Copyright (c) 2026 Bruno Corrêa Souto
-"""Coiote Místico 1.0.1: selo e abertura verificáveis de tiragens Rider-Waite-Smith."""
+"""Coiote Místico 1.0.2: selo e abertura verificáveis de tiragens Rider-Waite-Smith."""
 import hashlib
 import json
 import os
@@ -31,6 +31,14 @@ def serializar(registro):
 
 def sha256(dados):
     return hashlib.sha256(dados).hexdigest()
+
+
+def limpar_pergunta(ordem, texto):
+    texto = texto.strip()
+    marcador = re.match(rf"{ordem}\s*(?:[.)\-:ºª°]|\u2013|\u2014)(?!\d)\s*", texto)
+    if marcador and texto[marcador.end():].strip():
+        texto = texto[marcador.end():].strip()
+    return texto
 
 
 def carregar_catalogo():
@@ -64,6 +72,7 @@ def selar():
     if not (isinstance(perguntas, list) and len(perguntas) == 3
             and all(isinstance(p, str) and p.strip() for p in perguntas)):
         saida(2, erro="entrada_invalida", mensagem="Envie um array JSON com exatamente três perguntas não vazias.")
+    perguntas = [limpar_pergunta(i, p) for i, p in enumerate(perguntas, start=1)]
     baralho = list(range(78))
     secrets.SystemRandom().shuffle(baralho)
     if sorted(baralho) != list(range(78)):

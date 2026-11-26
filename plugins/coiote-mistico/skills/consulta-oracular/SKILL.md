@@ -63,7 +63,7 @@ O script `scripts/tiragem.py` faz o embaralhamento criptográfico, grava o regis
 
 ```bash
 mkdir -p /tmp/coiote-mistico
-H=256e9f4dd63c968681d492e08ddf8031b2bd4385c2e0cd22f49956c2d4368499
+H=cedd617929da7f6ffde4bc9b1236b1671a53d92561eb9934c5800624f91e8a0a
 S="${CLAUDE_SKILL_DIR}/scripts/tiragem.py"
 echo "$H  $S" | sha256sum -c --status 2>/dev/null || S=$(find / -type f -path '*/consulta-oracular/scripts/tiragem.py' -exec sh -c 'echo "$0  $1" | sha256sum -c --status' "$H" {} \; -print -quit 2>/dev/null)
 D=$(dirname "$(dirname "$S")")
@@ -73,7 +73,7 @@ echo "$H  /tmp/coiote-mistico/tiragem.py" | sha256sum -c && python3 -I /tmp/coio
 
 No Claude Code e no Cowork, `${CLAUDE_SKILL_DIR}` já chega substituído pela pasta da skill; no chat do claude.ai, a pasta da skill é copiada para o ambiente de execução e o `find` localiza a cópia cujo SHA-256 confere, mesmo que haja versões antigas instaladas. O hash do script garante o script, e o script garante o catálogo. Se a conferência não imprimir `OK` e o `verificar` não devolver `"ok": true`, não sele: diga em uma frase que a skill está incompleta e precisa ser reinstalada. Nas rodadas seguintes, repita a cópia só se os arquivos tiverem sumido. Não comente as chamadas de ferramenta na fala do Coiote: o viajante vê apenas a consulta, o selo e o comprovante. Se a execução de código não estiver disponível na conversa, diga em uma frase, antes de pedir números, que a rodada não terá selo verificável porque a execução de código precisa estar ativa no Claude.
 
-**Selar** (etapa 2). Passe as três perguntas confirmadas como array JSON pela entrada padrão, exatamente como confirmadas, com acentos e pontuação, sem os marcadores `1.`, `2.` e `3.`:
+**Selar** (etapa 2). Passe as três perguntas confirmadas como array JSON pela entrada padrão, exatamente como confirmadas, com acentos e pontuação, mas sem a numeração com que o viajante as marcou, seja qual for a forma (`1.`, `1-`, `1)`, `1º`, `1:`):
 
 ```bash
 python3 -I /tmp/coiote-mistico/tiragem.py selar <<'FIM'
@@ -81,7 +81,7 @@ python3 -I /tmp/coiote-mistico/tiragem.py selar <<'FIM'
 FIM
 ```
 
-Publique o `selo` devolvido. Não abra, liste nem leia os arquivos em `~/.coiote-mistico/` antes da abertura: o conteúdo da rodada permanece oculto até a escolha.
+Por segurança, o script também retira um marcador inicial que corresponda à posição da pergunta, sem tocar em números que façam parte do texto. Publique o `selo` devolvido e, ao apresentar as perguntas, use o texto do campo `perguntas` da resposta, que é o que ficou selado. Não abra, liste nem leia os arquivos em `~/.coiote-mistico/` antes da abertura: o conteúdo da rodada permanece oculto até a escolha.
 
 **Abrir** (etapa 3). O viajante pode separar as três posições por vírgulas, espaços ou quebras de linha. Extraia da mensagem só os três números inteiros, na ordem enviada, e monte o comando com eles e com o selo publicado, ambos entre aspas simples:
 
