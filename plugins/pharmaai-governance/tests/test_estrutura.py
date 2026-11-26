@@ -28,7 +28,7 @@ class Estrutura(unittest.TestCase):
         self.assertFalse((ROOT / '.codex-plugin').exists())
         self.assertFalse((ROOT / 'bin').exists())
         self.assertEqual(m['license'], 'MIT AND CC-BY-NC-ND-4.0')
-        self.assertEqual(m['version'], '1.0.0')
+        self.assertEqual(m['version'], '1.0.1')
         self.assertTrue((ROOT / 'LICENSES/MIT.txt').is_file())
         self.assertTrue((ROOT / m['icon']).is_file())
         self.assertTrue((ROOT / 'LICENSE').is_file())
@@ -37,7 +37,7 @@ class Estrutura(unittest.TestCase):
 
     def test_evals(self):
         cases = sorted(d for d in (ROOT / 'evals').iterdir() if d.is_dir())
-        self.assertEqual(len(cases), 28)
+        self.assertEqual(len(cases), 29)
         for d in cases:
             self.assertRegex(d.name, NAME)
             prompt = (d / 'prompt.md').read_text(encoding='utf-8')

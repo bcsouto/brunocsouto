@@ -29,7 +29,7 @@ Carregue somente o recurso necessário; mantenha os princípios deste núcleo em
 | Exportar, importar ou validar JSON solicitado | `references/CONTRATO-DOSSIE.md` e `schemas/dossie.schema.json` |
 | Caso clínico, sanitário ou farmacêutico | `../../references/SAUDE-E-FARMA.md` |
 
-Quando a pergunta central for vigência, aplicabilidade de um ato, lacuna de política, avaliação de IA ou de fornecedor, siga a skill correspondente do plugin (`analisar-regulacao`, `comparar-politicas`, `avaliar-governanca-ia`, `revisar-fornecedor-ia`) e preserve aqui apenas a matriz de evidências.
+Quando a pergunta central for vigência, aplicabilidade de um ato, lacuna de política, avaliação de IA ou de fornecedor, siga a skill correspondente do plugin (`analisar-regulacao`, `comparar-politicas`, `avaliar-governanca-ia`, `revisar-fornecedor-ia`) e preserve aqui apenas a matriz de evidências; diga ao usuário, em uma linha, que a resposta seguiu esse fluxo.
 
 ## Evidência e decisões
 
@@ -51,7 +51,7 @@ Identifique separadamente o material auditado (arquivo, versão, data e hash opc
 
 ## Resposta e verificação
 
-Para pergunta simples, entregue conclusão, suporte específico e limite relevante. Para auditoria, apresente os achados prioritários e uma matriz de afirmação, estado, fonte/localizador, limite e ação. A revisão entrega correções proporcionais ao pedido, sem reiniciar toda a curadoria. Uma auditoria por si só não reescreve o material. Reconheça cobertura parcial e identifique partes solicitadas que faltam.
+Se o pedido citar material que não foi fornecido, abra a resposta com essa limitação. Para pergunta simples, entregue conclusão, suporte específico e limite relevante. Para auditoria, apresente os achados prioritários e uma matriz de afirmação, estado, fonte/localizador, limite e ação. A revisão entrega correções proporcionais ao pedido, sem reiniciar toda a curadoria. Uma auditoria por si só não reescreve o material. Reconheça cobertura parcial e identifique partes solicitadas que faltam.
 
 Verifique internamente coerência entre afirmações e fontes, números, datas, referências utilizadas e alcance da conclusão. Não transforme o dossiê em certificado de conformidade ou aprovação clínica. Em uso de alto impacto, apresente suporte primário e as pendências que requerem análise especializada, sem inserir avisos genéricos em tarefas simples.
 
