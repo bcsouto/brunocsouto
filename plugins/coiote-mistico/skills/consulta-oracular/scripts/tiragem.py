@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # SPDX-License-Identifier: MIT
 # Copyright (c) 2026 Bruno Corrêa Souto
-"""Coiote Místico 1.0.0: selo e abertura verificáveis de tiragens Rider-Waite-Smith."""
+"""Coiote Místico 1.0.1: selo e abertura verificáveis de tiragens Rider-Waite-Smith."""
 import hashlib
 import json
 import os
@@ -125,7 +125,13 @@ def abrir(selo, texto):
     catalogo = carregar_catalogo()
     marca = PASTA / f"{selo}.abertura.json"
     if marca.is_file():
-        anteriores = json.loads(marca.read_text(encoding="utf-8"))
+        try:
+            anteriores = json.loads(marca.read_text(encoding="utf-8"))
+        except (ValueError, UnicodeDecodeError):
+            anteriores = None
+        if not (isinstance(anteriores, list) and len(anteriores) == 3
+                and all(type(p) is int and 1 <= p <= 78 for p in anteriores)):
+            saida(3, erro="marcador_invalido", mensagem="O registro de abertura desta rodada está corrompido.")
         if anteriores != posicoes:
             saida(4, erro="rodada_ja_aberta", posicoes_fixadas=anteriores,
                   mensagem="Esta rodada já foi aberta com outras posições. Uma nova escolha exige novo selo.")

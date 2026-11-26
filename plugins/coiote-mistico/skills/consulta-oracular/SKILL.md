@@ -63,12 +63,12 @@ O script `scripts/tiragem.py` faz o embaralhamento criptográfico, grava o regis
 
 ```bash
 mkdir -p /tmp/coiote-mistico
-H=e8ca7e50acbc61fa7d9eb2901ef097616fa097c235a8e4b171812b95cb0ac829
+H=256e9f4dd63c968681d492e08ddf8031b2bd4385c2e0cd22f49956c2d4368499
 S="${CLAUDE_SKILL_DIR}/scripts/tiragem.py"
 echo "$H  $S" | sha256sum -c --status 2>/dev/null || S=$(find / -type f -path '*/consulta-oracular/scripts/tiragem.py' -exec sh -c 'echo "$0  $1" | sha256sum -c --status' "$H" {} \; -print -quit 2>/dev/null)
 D=$(dirname "$(dirname "$S")")
 cp "$S" /tmp/coiote-mistico/tiragem.py && cp "$D/references/catalogo.json" /tmp/coiote-mistico/catalogo.json
-echo "$H  /tmp/coiote-mistico/tiragem.py" | sha256sum -c && python3 /tmp/coiote-mistico/tiragem.py verificar
+echo "$H  /tmp/coiote-mistico/tiragem.py" | sha256sum -c && python3 -I /tmp/coiote-mistico/tiragem.py verificar
 ```
 
 No Claude Code e no Cowork, `${CLAUDE_SKILL_DIR}` já chega substituído pela pasta da skill; no chat do claude.ai, a pasta da skill é copiada para o ambiente de execução e o `find` localiza a cópia cujo SHA-256 confere, mesmo que haja versões antigas instaladas. O hash do script garante o script, e o script garante o catálogo. Se a conferência não imprimir `OK` e o `verificar` não devolver `"ok": true`, não sele: diga em uma frase que a skill está incompleta e precisa ser reinstalada. Nas rodadas seguintes, repita a cópia só se os arquivos tiverem sumido. Não comente as chamadas de ferramenta na fala do Coiote: o viajante vê apenas a consulta, o selo e o comprovante. Se a execução de código não estiver disponível na conversa, diga em uma frase, antes de pedir números, que a rodada não terá selo verificável porque a execução de código precisa estar ativa no Claude.
@@ -76,18 +76,20 @@ No Claude Code e no Cowork, `${CLAUDE_SKILL_DIR}` já chega substituído pela pa
 **Selar** (etapa 2). Passe as três perguntas confirmadas como array JSON pela entrada padrão, exatamente como confirmadas, com acentos e pontuação, sem os marcadores `1.`, `2.` e `3.`:
 
 ```bash
-python3 /tmp/coiote-mistico/tiragem.py selar <<'FIM'
+python3 -I /tmp/coiote-mistico/tiragem.py selar <<'FIM'
 ["primeira pergunta", "segunda pergunta", "terceira pergunta"]
 FIM
 ```
 
 Publique o `selo` devolvido. Não abra, liste nem leia os arquivos em `~/.coiote-mistico/` antes da abertura: o conteúdo da rodada permanece oculto até a escolha.
 
-**Abrir** (etapa 3). Use o selo publicado e as três posições na ordem enviada, aceitando vírgulas, espaços ou quebras de linha:
+**Abrir** (etapa 3). O viajante pode separar as três posições por vírgulas, espaços ou quebras de linha. Extraia da mensagem só os três números inteiros, na ordem enviada, e monte o comando com eles e com o selo publicado, ambos entre aspas simples:
 
 ```bash
-python3 /tmp/coiote-mistico/tiragem.py abrir SELO "78 1 23"
+python3 -I /tmp/coiote-mistico/tiragem.py abrir 'SELO' '78 1 23'
 ```
+
+Nunca copie o texto do viajante para dentro de um comando: se a mensagem não trouxer exatamente três números inteiros, peça a correção sem rodar nada. Isso impede que um texto digitado no lugar dos números seja executado pelo terminal.
 
 O script recalcula o hash, valida o registro e devolve, para cada pergunta, a posição, o ID, os nomes, o numeral e os elementos da carta, além de `registro_json`. Conforme o código de saída:
 
@@ -95,7 +97,7 @@ O script recalcula o hash, valida o registro e devolve, para cada pergunta, a po
 |---|---|---|
 | `0` | Abertura verificada | Ler as cartas na ordem devolvida |
 | `2` | Escolha inválida (repetição, fora de 1 a 78, quantidade errada) | Pedir só a correção e manter o mesmo selo |
-| `3` | Registro ausente, hash divergente, registro inválido, ou catálogo ausente ou adulterado | Encerrar a rodada sem revelar cartas; dizer com naturalidade que aquela ordem já não pode ser conferida; uma nova rodada exige novo selo e nova escolha |
+| `3` | Registro ausente, hash divergente, registro inválido, registro de abertura corrompido, ou catálogo ausente ou adulterado | Encerrar a rodada sem revelar cartas; dizer com naturalidade que aquela ordem já não pode ser conferida; uma nova rodada exige novo selo e nova escolha |
 | `4` | Rodada já aberta com outras posições | Explicar que a primeira abertura fixou as posições; para escolher de novo, iniciar nova tiragem |
 
 No `selar`, o código `2` indica JSON malformado: corrija o escape das aspas e rode de novo, sem envolver o viajante. Em uma falha transitória de execução, repita o mesmo comando com o mesmo selo e as mesmas posições antes de falar em reinício. Se o viajante mudar o texto ou a ordem das perguntas, volte à confirmação e sele de novo antes de aceitar a escolha. Uma nova consulta sempre começa com novo selo.
@@ -106,7 +108,7 @@ Após a leitura, inclua um comprovante compacto e separado: o selo verificado, a
 
 > Para conferir o selo, calcule o SHA‑256 da linha em UTF‑8, sem BOM nem quebra de linha ao final.
 
-Mantenha os detalhes técnicos fora da leitura. Se o viajante pedir explicação, diga que o selo permite conferir o registro anterior à escolha, que a correspondência das cartas se verifica pelas posições e pelo catálogo publicado com o plugin, e que o embaralhamento usa `secrets.SystemRandom`. Se ele colar uma linha para conferir, use `python3 /tmp/coiote-mistico/tiragem.py conferir` com a linha pela entrada padrão.
+Mantenha os detalhes técnicos fora da leitura. Se o viajante pedir explicação, diga que o selo permite conferir o registro anterior à escolha, que a correspondência das cartas se verifica pelas posições e pelo catálogo publicado com o plugin, e que o embaralhamento usa `secrets.SystemRandom`. Se ele colar uma linha para conferir, passe-a ao `python3 -I /tmp/coiote-mistico/tiragem.py conferir` por um heredoc com o delimitador entre aspas simples (`<<'FIM'`), como no selo, para que nada da linha seja interpretado pelo terminal.
 
 ## Prompt visual compilado no padrão MidasFlow
 
