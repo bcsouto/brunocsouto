@@ -35,6 +35,6 @@ Calcule o SHA-256 da linha `registro_json` do comprovante, em UTF-8, sem BOM nem
 
 ## Licença
 
-MIT. Veja o arquivo `LICENSE`.
+O plugin usa duas licenças. O código do script `scripts/tiragem.py` está sob a licença MIT. Todo o restante (instruções da skill, persona, roteiro da consulta, README e ícone) está sob a Creative Commons Atribuição-NãoComercial-SemDerivações 4.0 Internacional (CC BY-NC-ND 4.0): pode ser copiado e redistribuído sem alterações, com crédito ao autor e sem fins comerciais. Versões modificadas e uso comercial dependem de autorização prévia e por escrito. Veja o arquivo `LICENSE` e a pasta `LICENSES`.
 
 Bruno Corrêa Souto · in/brunocsouto

@@ -63,13 +63,13 @@ O script `scripts/tiragem.py` faz o embaralhamento criptográfico, grava o regis
 
 ```bash
 mkdir -p /tmp/coiote-mistico
+H=7b0b57b14a97b2ad7e54e9b3171b30767e3f12a2040b4df2219b7fce0d9ee6ef
 S="${CLAUDE_SKILL_DIR}/scripts/tiragem.py"
-[ -f "$S" ] || S=$(find / -type f -path '*/consulta-oracular/scripts/tiragem.py' -print -quit 2>/dev/null)
-cp "$S" /tmp/coiote-mistico/tiragem.py
-echo "b4e71a08152a64606e242585470dfa0f16676a90568baece8782964bf0d14ffb  /tmp/coiote-mistico/tiragem.py" | sha256sum -c
+echo "$H  $S" | sha256sum -c --status 2>/dev/null || S=$(find / -type f -path '*/consulta-oracular/scripts/tiragem.py' -exec sh -c 'echo "$0  $1" | sha256sum -c --status' "$H" {} \; -print -quit 2>/dev/null)
+cp "$S" /tmp/coiote-mistico/tiragem.py && echo "$H  /tmp/coiote-mistico/tiragem.py" | sha256sum -c
 ```
 
-No Claude Code e no Cowork, `${CLAUDE_SKILL_DIR}` já chega substituído pela pasta da skill; no chat do claude.ai, a pasta da skill é copiada para o ambiente de execução e o `find` a localiza. Se a conferência não imprimir `OK`, não sele: diga em uma frase que a skill está incompleta e precisa ser reinstalada. Nas rodadas seguintes, repita a cópia só se o arquivo tiver sumido. Não comente as chamadas de ferramenta na fala do Coiote: o viajante vê apenas a consulta, o selo e o comprovante. Se a execução de código não estiver disponível na conversa, diga em uma frase, antes de pedir números, que a rodada não terá selo verificável porque a execução de código precisa estar ativa no Claude.
+No Claude Code e no Cowork, `${CLAUDE_SKILL_DIR}` já chega substituído pela pasta da skill; no chat do claude.ai, a pasta da skill é copiada para o ambiente de execução e o `find` localiza a cópia cujo SHA-256 confere, mesmo que haja versões antigas instaladas. Se a conferência não imprimir `OK`, não sele: diga em uma frase que a skill está incompleta e precisa ser reinstalada. Nas rodadas seguintes, repita a cópia só se o arquivo tiver sumido. Não comente as chamadas de ferramenta na fala do Coiote: o viajante vê apenas a consulta, o selo e o comprovante. Se a execução de código não estiver disponível na conversa, diga em uma frase, antes de pedir números, que a rodada não terá selo verificável porque a execução de código precisa estar ativa no Claude.
 
 **Selar** (etapa 2). Passe as três perguntas confirmadas como array JSON pela entrada padrão, exatamente como confirmadas, com acentos e pontuação, sem os marcadores `1.`, `2.` e `3.`:
 

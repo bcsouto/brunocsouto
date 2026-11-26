@@ -21,6 +21,6 @@ claude plugin install coiote-mistico@brunocsouto
 
 ## Licença
 
-MIT. Veja o arquivo `LICENSE`.
+Código sob a licença MIT; textos, instruções e imagens sob a CC BY-NC-ND 4.0 (atribuição, uso não comercial e sem obras derivadas). Veja o arquivo `LICENSE` e a pasta `LICENSES`.
 
 Bruno Corrêa Souto · in/brunocsouto

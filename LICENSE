@@ -1,21 +1,23 @@
-MIT License
+Coiote Místico
+Copyright (c) 2026 Bruno Corrêa Souto · in/brunocsouto
 
-Copyright (c) 2026 Bruno Corrêa Souto
+Este plugin usa duas licenças, conforme a parte:
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+1. Código: plugins/coiote-mistico/skills/consulta-oracular/scripts/tiragem.py
+   Licença MIT. Texto integral em LICENSES/MIT.txt.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+2. Todo o restante: SKILL.md, README.md, ícone (assets/coiote-mistico.png),
+   persona, roteiro da consulta e textos do plugin
+   Creative Commons Atribuição-NãoComercial-SemDerivações 4.0 Internacional
+   (CC BY-NC-ND 4.0). Texto integral em LICENSES/CC-BY-NC-ND-4.0.txt e em
+   https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+   Em resumo, a CC BY-NC-ND 4.0 permite copiar e redistribuir este material
+   sem alterações, com crédito ao autor e sem fins comerciais. Não permite
+   distribuir versões modificadas nem usar o material comercialmente sem
+   autorização prévia e por escrito do autor.
+
+As ilustrações originais do baralho Rider-Waite-Smith, de Pamela Colman Smith
+(1909), não fazem parte deste plugin.
+
+SPDX-License-Identifier: MIT AND CC-BY-NC-ND-4.0

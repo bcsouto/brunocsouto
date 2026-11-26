@@ -9,7 +9,7 @@
   },
   "homepage": "https://github.com/bcsouto-hub/coiote-mistico",
   "repository": "https://github.com/bcsouto-hub/coiote-mistico",
-  "license": "MIT",
+  "license": "MIT AND CC-BY-NC-ND-4.0",
   "keywords": ["tarô", "tarot", "rider-waite-smith", "oráculo", "midasflow"],
   "icon": "./assets/coiote-mistico.png"
 }
